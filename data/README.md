@@ -1,7 +1,14 @@
 # Terminology data
 
-Place the local `gb_terminology_databases.zip` in this directory.
+The public repository includes the **minimal searchable term index** for four domains (2,060 entries across eight GB/T standards).
 
-The original data archive contains eight GB/T standards, four logical domains and approximately 2,060 terminology entries. It is not included in this initial public commit. Use `--db` or `GB_TERMINOLOGY_DB_ROOT` to point to a local copy.
+| Directory | Entries |
+|---|---:|
+| `oceanography/` | 1,175 |
+| `artificial_intelligence/` | 75 |
+| `remote_sensing/` | 594 |
+| `statistics/` | 216 |
 
-Original national standard PDFs and substantial verbatim standard text should only be publicly redistributed when the applicable rights allow it.
+Each `indexes/terms.csv` contains only term identifiers, Chinese/English names, abbreviations, aliases, standard and clause identifiers, physical PDF page references, and verification labels.
+
+The Skill's read-only lookup uses this directory by default. To use your separately acquired full database, specify `--db path/to/gb_terminology_databases.zip` or set `GB_TERMINOLOGY_DB_ROOT`. Original standard PDFs, source-text definitions, audit artifacts, OCR outputs, and intermediate files are not shipped.
