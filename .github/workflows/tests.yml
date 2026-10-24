@@ -16,6 +16,10 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Run unittest suite
         run: python -m unittest discover -s .agents/skills/academic-terminology-zh/tests -v
+      - name: Verify bundled terminology indexes
+        run: |
+          python .agents/skills/academic-terminology-zh/scripts/lookup.py --stats --json > /tmp/term_counts.json
+          python -c "import json; counts=json.load(open('/tmp/term_counts.json',encoding='utf-8'))['counts']; assert counts=={'oceanography':1175,'artificial_intelligence':75,'remote_sensing':594,'statistics':216}, counts"
       - name: Compile scripts
         run: |
           python -m py_compile .agents/skills/academic-terminology-zh/scripts/lookup.py
