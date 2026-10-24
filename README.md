@@ -21,7 +21,7 @@ cd academic-terminology-zh
 
 > 请将 https://github.com/GeoGeekLab/academic-terminology-zh 安装到当前项目，配置 `academic-terminology-zh` Skill，并运行基础测试与术语检索检查。
 
-**数据状态：** 当前公开仓库部署的是 Skill 源码。四领域数据库归档尚未同步到 GitHub。已有本地数据库的用户可将 `gb_terminology_databases.zip` 放入 `data/`，或使用 `--db` 指向解压目录；请勿将原始国标 PDF 在未确认公开分发权限的情况下上传。
+**数据状态：** 仓库随附四个领域的术语索引（共 2,060 条），克隆后即可离线检索。标准原始 PDF、定义全文和审校过程文件不在公开仓库中。需要完整本地资料时，可通过 `--db` 指向额外取得的原始数据库 ZIP 或解压目录。
 
 ## Usage
 
@@ -42,11 +42,11 @@ python .agents/skills/academic-terminology-zh/scripts/lookup.py --q "散射系�
 python .agents/skills/academic-terminology-zh/scripts/lookup.py --q "回归分析" --domain statistics --domain artificial_intelligence --json
 ```
 
-通过 `--db path/to/gb_terminology_databases.zip` 或环境变量 `GB_TERMINOLOGY_DB_ROOT` 指定数据库。Python 3.10+，脚本仅使用标准库。
+默认读取仓库内的 `data/gb_terminology_databases/`。也可通过 `--db path/to/gb_terminology_databases.zip` 或环境变量 `GB_TERMINOLOGY_DB_ROOT` 指向含完整定义的本地数据库。Python 3.10+，脚本仅使用标准库。
 
 ## Data model
 
-本地数据快照目前包含 2,060 条记录，涵盖八份国家标准：
+随仓库发布的结构化索引包含 2,060 条记录，涵盖八份国家标准：
 
 | Domain | Slug | Entries |
 |---|---|---:|
@@ -55,7 +55,7 @@ python .agents/skills/academic-terminology-zh/scripts/lookup.py --q "回归分�
 | 遥感 | `remote_sensing` | 594 |
 | 统计学 | `statistics` | 216 |
 
-保留中英文术语、别名、定义、标准号、条款、PDF 来源页码和核验信息。词表是写作参照；跨领域同名概念会保留独立记录。
+公开索引保留中英文术语、缩写、别名、标准号、条款、PDF 来源页码和核验标记。原始 PDF 与定义全文不随仓库分发；持有相应资料的用户可配置完整本地库。跨领域同名概念保留独立记录。
 
 ## Custom domains
 
@@ -89,8 +89,12 @@ python -m unittest discover -s .agents/skills/academic-terminology-zh/tests -v
     tests/
     evals/
 custom_terms/
-data/
+data/gb_terminology_databases/
+    oceanography/indexes/terms.csv
+    artificial_intelligence/indexes/terms.csv
+    remote_sensing/indexes/terms.csv
+    statistics/indexes/terms.csv
 README.md
 ```
 
-Skill 与术语数据库采用同一仓库结构；尚未公开的数据库文件可以放在本地 `data/` 目录中使用。
+Skill 与四领域术语索引在同一仓库中发布。自定义领域导入后可直接检索。
