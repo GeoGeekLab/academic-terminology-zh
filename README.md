@@ -6,21 +6,35 @@
 ![Dependencies](https://img.shields.io/badge/dependencies-stdlib_only-4c6ef5)
 ![Dataset](https://img.shields.io/badge/terms-2%2C060-009688)
 
-**Agent Skill for terminology-aware Chinese academic writing.**
+**让术语准确，让论文更好读。**
 
-面向中文学术论文的起草、润色、英译中与术语一致性检查。Agent 按需检索本地专业词表，根据上下文选择术语，并保持技术方法、变量、公式和数值准确。
+一篇中文学术论文，怎样才能写得清楚？句子流畅很重要，专业术语也一样重要。一个概念在摘要、方法和讨论中使用了不同译名，读者就需要反复确认：这些说的是同一件事吗？
 
-## ⚡ Features
+写作中的问题往往很具体：某个英文术语该怎么译？一个缩写需要怎样保持一致？同一个词在不同学科中，又应该选用哪种表达？
 
-| Capability | Implementation |
+这正是 **academic-terminology-zh** 要帮助你解决的事。
+
+它是一个面向**中文学术论文起草、专业润色、英译中和术语一致性检查**的 [Agent Skill](https://agentskills.io/specification)。Agent 根据研究语境理解文本，按需查询本地专业词表，再将适合的术语融入正文。研究方法、概念、变量、公式、数值和结论保持原意。
+
+**目标很简单：让每个专业概念都有准确、自然、前后一致的表达。**
+
+## ⚡ What Can You Do With It?
+
+你可以从一段方法描述开始，也可以让 Agent 检查一整篇论文。Skill 把专业术语检索接入写作过程，让术语选择和语言润色一起完成。
+
+| 你需要什么 | Skill 如何帮助 |
 | --- | --- |
-| Four domains | 海洋学 · 人工智能 · 遥感 · 统计学 |
-| Local-first | 2,060 条术语索引随仓库提供；离线检索 |
-| Low overhead | Python 3.10+；标准库；无服务端组件 |
-| Context-aware writing | Agent 负责语境判断；CLI 提供可复现的词面检索 |
-| Extensible | CSV / JSONL 导入；自动发现自定义领域 |
+| **专业术语支持** | 覆盖海洋学、人工智能、遥感、统计学四个领域 |
+| **随时查询** | 仓库自带 2,060 条术语索引，可在本地离线检索 |
+| **轻量运行** | Python 3.10+、标准库实现，无需服务端组件 |
+| **结合语境选词** | Agent 判断学科与段落语境；CLI 提供可复现的词面检索 |
+| **加入自己的术语** | 支持 CSV / JSONL 导入，并自动发现新增领域 |
+
+这里有一个关键分工：**CLI 帮你找到术语，Agent 帮你把术语用对。**
 
 ## 🚀 Quick Start
+
+先看看词表里有什么。从仓库根目录运行以下命令，即可列出当前可用的领域及术语数量。
 
 ```bash
 git clone https://github.com/GeoGeekLab/academic-terminology-zh.git
@@ -28,7 +42,7 @@ cd academic-terminology-zh
 python .agents/skills/academic-terminology-zh/scripts/lookup.py --stats
 ```
 
-预期领域计数：
+当前四个内置领域的预期计数：
 
 ```text
 artificial_intelligence: 75
@@ -39,13 +53,13 @@ statistics: 216
 
 ### Prompt-driven install
 
-将以下 Prompt 交给 Codex，即可把 Skill 和随仓库发布的术语索引接入当前项目：
+使用 Codex？可以直接让它完成安装、复制词表和验证。将下面的 Prompt 交给 Codex：
 
 > 从 https://github.com/GeoGeekLab/academic-terminology-zh 安装 `academic-terminology-zh` 到当前项目。将 `.agents/skills/academic-terminology-zh/` 和 `data/gb_terminology_databases/` 放入项目对应目录；运行 `lookup.py --stats` 和单元测试，确认四个领域合计 2,060 条记录。
 
 ### 1-minute demo
 
-在支持 Agent Skills 的 Codex 工作区中：
+想看看它如何修改一段中文学术文字？在支持 Agent Skills 的 Codex 工作区中，使用下面的示例：
 
 ```text
 $academic-terminology-zh
@@ -56,7 +70,7 @@ $academic-terminology-zh
 [粘贴正文]
 ```
 
-也可直接查询：
+如果你想先核对某个术语，也可以直接运行 CLI。例如，查询“散射系数”，或同时从统计学与人工智能领域查找“回归分析”：
 
 ```bash
 python .agents/skills/academic-terminology-zh/scripts/lookup.py --q "散射系数" --detail
@@ -64,6 +78,8 @@ python .agents/skills/academic-terminology-zh/scripts/lookup.py --q "回归分�
 ```
 
 ## 📊 Dataset
+
+这些术语来自四个学科的 8 项 GB/T 标准，并整理为便于检索的结构化索引。你可以查看中文名、英文名、缩写、别名与来源信息，再结合研究语境作出选择。
 
 | Domain | Slug | Terms |
 | --- | --- | ---: |
@@ -75,9 +91,11 @@ python .agents/skills/academic-terminology-zh/scripts/lookup.py --q "回归分�
 
 **Public index schema:** `id`, `zh`, `en`, `abbr`, `aliases_zh`, `aliases_en`, `standard`, `clause`, `physical_pdf_pages`, `verification`.
 
-原始国标 PDF、定义全文及审校中间文件不在公开索引内。需要完整定义时，可使用 `--db` 加载另行获取的完整本地数据库。
+公开索引聚焦术语及其来源信息。需要进一步查看完整定义时，可以使用 `--db` 加载另行获取的完整本地数据库。原始国标 PDF、定义全文与审校中间文件由各自来源单独管理。
 
 ## ⚙️ Architecture
+
+写作时，Skill 会根据任务选择相关领域，并在需要时调用术语检索。你可以专注于论文内容，检索工具负责提供候选术语与来源字段。
 
 ```text
 Academic writing prompt
@@ -95,6 +113,8 @@ Academic writing prompt
                          ▼
                    Academic text
 ```
+
+仓库将写作规则、检索脚本、测试和术语数据分开组织，便于独立使用或扩展。
 
 **Repository layout**
 
@@ -117,6 +137,8 @@ Academic writing prompt
 ```
 
 ## 🛠 CLI
+
+需要检查具体术语、查看来源字段，或切换本地数据库？这些操作都可以直接在命令行完成。
 
 ```bash
 # List domains and entry counts
@@ -143,7 +165,9 @@ python .agents/skills/academic-terminology-zh/scripts/lookup.py --db path/to/gb_
 
 ## 🧩 Extensions
 
-新增学科使用 CSV / JSONL。导入后自动纳入检索范围：
+你的研究方向不在内置的四个领域里？可以把经过核对的术语整理为 CSV 或 JSONL，然后导入自定义词表。新领域会自动进入检索范围。
+
+下面以 `climate_science` 为例：
 
 ```bash
 python .agents/skills/academic-terminology-zh/scripts/import_terms.py \
@@ -156,9 +180,11 @@ python .agents/skills/academic-terminology-zh/scripts/lookup.py --stats
 
 源数据入口：[国家标准全文公开系统](https://openstd.samr.gov.cn/) · [全国标准信息公共服务平台](https://std.samr.gov.cn/) · [术语在线](https://www.termonline.cn/)。
 
-新建领域时，可让 Codex 先将合法取得的源资料整理、核对为 CSV/JSONL，再调用 `import_terms.py`。字段规范及示例见 [Extension guide](.agents/skills/academic-terminology-zh/references/usage.md#-custom-domains)。
+你也可以让 Codex 协助整理合法取得的专业资料：先核对术语与来源，再生成 CSV / JSONL，最后通过 `import_terms.py` 导入。字段规范和示例见 [Extension guide](.agents/skills/academic-terminology-zh/references/usage.md#-custom-domains)。
 
 ## 🧪 Testing & CI
+
+修改术语库或检索脚本后，运行单元测试，确认写作工具与词表仍能正常配合。
 
 ```bash
 python -m unittest discover -s .agents/skills/academic-terminology-zh/tests -v
@@ -168,6 +194,12 @@ GitHub Actions：Python **3.10 / 3.12**；单元测试、脚本编译、四领�
 
 ## 🤝 Contributing
 
-Issue / PR 可用于补充术语领域、改进检索和完善写作测试。提交前运行上述测试；新增词表应包含明确的来源信息。
+专业术语库会随着学科和研究实践不断扩展。如果你发现值得补充的术语、希望支持新的领域，或对检索及写作测试有改进建议，欢迎提交 Issue 或 Pull Request。
 
-仓库目前未配置 `LICENSE` 文件；源码许可条款以实际仓库后续发布内容为准。
+提交前请运行上述测试，并为新增词表记录清晰的来源信息。这有助于其他研究者理解和复用术语。
+
+仓库目前尚未发布 `LICENSE` 文件。源码使用权限以仓库后续公布的许可条款为准。
+
+---
+
+**从准确的术语开始，让每一段学术表达都更清楚。**
