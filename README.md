@@ -1,100 +1,173 @@
 # academic-terminology-zh
 
-[![Agent Skills](https://img.shields.io/badge/Agent-Skill-111827)](https://agentskills.io/specification)
+[![CI](https://github.com/GeoGeekLab/academic-terminology-zh/actions/workflows/tests.yml/badge.svg)](https://github.com/GeoGeekLab/academic-terminology-zh/actions/workflows/tests.yml)
+[![Agent Skills](https://img.shields.io/badge/Agent_Skills-compatible-222222)](https://agentskills.io/specification)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
-![Runtime](https://img.shields.io/badge/runtime-local--first-555555)
+![Dependencies](https://img.shields.io/badge/dependencies-stdlib_only-4c6ef5)
+![Dataset](https://img.shields.io/badge/terms-2%2C060-009688)
 
-面向中文学术论文起草、润色、英译中和全文术语一致性检查的 Agent Skill。按需检索专业词表，在原有研究方法、变量、数值和结论不变的前提下改善中文学术表达。
+**Agent Skill for terminology-aware Chinese academic writing.**
 
-目前支持四个逻辑领域：**海洋学、机器学习相关的人工智能术语、遥感、统计学**。用户也可添加其他学科词表。
+面向中文学术论文的起草、润色、英译中与术语一致性检查。Agent 按需检索本地专业词表，根据上下文选择术语，并保持技术方法、变量、公式和数值准确。
 
-## Install
+## ⚡ Features
 
-从项目根目录克隆仓库，Codex 可识别 `.agents/skills/academic-terminology-zh/SKILL.md`：
+| Capability | Implementation |
+| --- | --- |
+| Four domains | 海洋学 · 人工智能 · 遥感 · 统计学 |
+| Local-first | 2,060 条术语索引随仓库提供；离线检索 |
+| Low overhead | Python 3.10+；标准库；无服务端组件 |
+| Context-aware writing | Agent 负责语境判断；CLI 提供可复现的词面检索 |
+| Extensible | CSV / JSONL 导入；自动发现自定义领域 |
+
+## 🚀 Quick Start
 
 ```bash
 git clone https://github.com/GeoGeekLab/academic-terminology-zh.git
 cd academic-terminology-zh
+python .agents/skills/academic-terminology-zh/scripts/lookup.py --stats
 ```
 
-也可以向 Codex 输入：
+预期领域计数：
 
-> 请将 https://github.com/GeoGeekLab/academic-terminology-zh 安装到当前项目，配置 `academic-terminology-zh` Skill，并运行基础测试与术语检索检查。
+```text
+artificial_intelligence: 75
+oceanography: 1175
+remote_sensing: 594
+statistics: 216
+```
 
-**数据状态：** 仓库随附四个领域的术语索引（共 2,060 条），克隆后即可离线检索。标准原始 PDF、定义全文和审校过程文件不在公开仓库中。需要完整本地资料时，可通过 `--db` 指向额外取得的原始数据库 ZIP 或解压目录。
+### Prompt-driven install
 
-## Usage
+将以下 Prompt 交给 Codex，即可把 Skill 和随仓库发布的术语索引接入当前项目：
 
-在 Codex 中：
+> 从 https://github.com/GeoGeekLab/academic-terminology-zh 安装 `academic-terminology-zh` 到当前项目。将 `.agents/skills/academic-terminology-zh/` 和 `data/gb_terminology_databases/` 放入项目对应目录；运行 `lookup.py --stats` 和单元测试，确认四个领域合计 2,060 条记录。
+
+### 1-minute demo
+
+在支持 Agent Skills 的 Codex 工作区中：
 
 ```text
 $academic-terminology-zh
-请对以下中文学术论文的方法部分进行专业润色。
-优化学术表达及术语使用，保持研究方法、专业概念、变量、
-公式、数值和结论准确，直接输出润色后的正文。
+请对以下中文学术论文的方法部分进行专业润色，
+规范术语及学术表达，保持研究方法、概念、变量、
+公式、数值和结论不变。直接输出修改稿。
+
+[粘贴正文]
 ```
 
-查询术语：
+也可直接查询：
 
 ```bash
-python .agents/skills/academic-terminology-zh/scripts/lookup.py --stats
 python .agents/skills/academic-terminology-zh/scripts/lookup.py --q "散射系数" --detail
 python .agents/skills/academic-terminology-zh/scripts/lookup.py --q "回归分析" --domain statistics --domain artificial_intelligence --json
 ```
 
-默认读取仓库内的 `data/gb_terminology_databases/`。也可通过 `--db path/to/gb_terminology_databases.zip` 或环境变量 `GB_TERMINOLOGY_DB_ROOT` 指向含完整定义的本地数据库。Python 3.10+，脚本仅使用标准库。
+## 📊 Dataset
 
-## Data model
-
-随仓库发布的结构化索引包含 2,060 条记录，涵盖八份国家标准：
-
-| Domain | Slug | Entries |
-|---|---|---:|
+| Domain | Slug | Terms |
+| --- | --- | ---: |
 | 海洋学 | `oceanography` | 1,175 |
-| 机器学习相关的 AI 术语 | `artificial_intelligence` | 75 |
+| 人工智能 | `artificial_intelligence` | 75 |
 | 遥感 | `remote_sensing` | 594 |
 | 统计学 | `statistics` | 216 |
+| **Total** | **4 domains · 8 GB/T standards** | **2,060** |
 
-公开索引保留中英文术语、缩写、别名、标准号、条款、PDF 来源页码和核验标记。原始 PDF 与定义全文不随仓库分发；持有相应资料的用户可配置完整本地库。跨领域同名概念保留独立记录。
+**Public index schema:** `id`, `zh`, `en`, `abbr`, `aliases_zh`, `aliases_en`, `standard`, `clause`, `physical_pdf_pages`, `verification`.
 
-## Custom domains
+原始国标 PDF、定义全文及审校中间文件不在公开索引内。需要完整定义时，可使用 `--db` 加载另行获取的完整本地数据库。
 
-将整理好的 CSV/JSONL 导入 `custom_terms/<domain>/indexes/terms.csv`。新领域会被检索器自动发现：
+## ⚙️ Architecture
+
+```text
+Academic writing prompt
+        │
+        ▼
+   SKILL.md                 ← writing behavior / domain routing
+        │
+        ├── on-demand lookup ──► scripts/lookup.py
+        │                            │
+        │                            ├── data/gb_terminology_databases/
+        │                            └── custom_terms/<domain>/
+        │
+        └──► Agent writing / polishing / translation / review
+                         │
+                         ▼
+                   Academic text
+```
+
+**Repository layout**
+
+```text
+.
+├── .agents/skills/academic-terminology-zh/
+│   ├── SKILL.md
+│   ├── scripts/
+│   │   ├── lookup.py
+│   │   └── import_terms.py
+│   ├── references/usage.md
+│   ├── tests/
+│   └── evals/
+├── data/gb_terminology_databases/
+│   ├── oceanography/indexes/terms.csv
+│   ├── artificial_intelligence/indexes/terms.csv
+│   ├── remote_sensing/indexes/terms.csv
+│   └── statistics/indexes/terms.csv
+└── custom_terms/
+```
+
+## 🛠 CLI
 
 ```bash
-python .agents/skills/academic-terminology-zh/scripts/import_terms.py --domain climate_science --input sources/new_domain/terms.csv --source "词表名称"
+# List domains and entry counts
+python .agents/skills/academic-terminology-zh/scripts/lookup.py --stats
+
+# Inspect source fields, definitions when available
+python .agents/skills/academic-terminology-zh/scripts/lookup.py --q "频率" --detail
+
+# Load an external full database
+python .agents/skills/academic-terminology-zh/scripts/lookup.py --db path/to/gb_terminology_databases.zip --q "回归分析" --json
+```
+
+| Flag | Function |
+| --- | --- |
+| `--q TERM` | 检索中文 / 英文术语；可重复 |
+| `--domain SLUG` | 领域过滤；可重复 |
+| `--detail` | 输出定义和来源等扩展字段（取决于数据源） |
+| `--json` | 结构化输出 |
+| `--stats` | 领域及记录数 |
+| `--limit N` | 每个查询最多返回 `1–20` 条；默认 `5` |
+| `--db PATH` | 切换 CSV 目录或数据库 ZIP |
+
+完整参数与数据库加载规则见 [CLI reference](.agents/skills/academic-terminology-zh/references/usage.md)。
+
+## 🧩 Extensions
+
+新增学科使用 CSV / JSONL。导入后自动纳入检索范围：
+
+```bash
+python .agents/skills/academic-terminology-zh/scripts/import_terms.py \
+  --domain climate_science \
+  --input sources/new_domain/terms.csv \
+  --source "自定义术语来源"
+
 python .agents/skills/academic-terminology-zh/scripts/lookup.py --stats
 ```
 
-源材料可从 [国家标准全文公开系统](https://openstd.samr.gov.cn/)、[全国标准信息公共服务平台](https://std.samr.gov.cn/)和[术语在线](https://www.termonline.cn/)查询。官方 PDF 需先提取和校对为结构化术语表，再调用导入脚本。
+源数据入口：[国家标准全文公开系统](https://openstd.samr.gov.cn/) · [全国标准信息公共服务平台](https://std.samr.gov.cn/) · [术语在线](https://www.termonline.cn/)。
 
-可向 Codex 输入：
+新建领域时，可让 Codex 先将合法取得的源资料整理、核对为 CSV/JSONL，再调用 `import_terms.py`。字段规范及示例见 [Extension guide](.agents/skills/academic-terminology-zh/references/usage.md#-custom-domains)。
 
-> 请依据 `sources/new_domain/` 中的合法取得的权威资料创建 `climate_science` 术语库；提取并核对中英文术语及来源，生成 CSV/JSONL，运行 `import_terms.py` 导入 `custom_terms/climate_science/`，最后完成查询测试。
-
-## Tests
+## 🧪 Testing & CI
 
 ```bash
 python -m unittest discover -s .agents/skills/academic-terminology-zh/tests -v
 ```
 
-## Repository layout
+GitHub Actions：Python **3.10 / 3.12**；单元测试、脚本编译、四领域数据计数验证。
 
-```text
-.agents/skills/academic-terminology-zh/
-    SKILL.md
-    scripts/lookup.py
-    scripts/import_terms.py
-    references/usage.md
-    tests/
-    evals/
-custom_terms/
-data/gb_terminology_databases/
-    oceanography/indexes/terms.csv
-    artificial_intelligence/indexes/terms.csv
-    remote_sensing/indexes/terms.csv
-    statistics/indexes/terms.csv
-README.md
-```
+## 🤝 Contributing
 
-Skill 与四领域术语索引在同一仓库中发布。自定义领域导入后可直接检索。
+Issue / PR 可用于补充术语领域、改进检索和完善写作测试。提交前运行上述测试；新增词表应包含明确的来源信息。
+
+仓库目前未配置 `LICENSE` 文件；源码许可条款以实际仓库后续发布内容为准。
