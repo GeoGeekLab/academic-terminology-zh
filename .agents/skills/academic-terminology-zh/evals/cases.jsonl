@@ -1,0 +1,12 @@
+{"id":"draft-marine","trigger":true,"prompt":"用规范中文写一段物理海洋学引言，讨论水团、水系及海洋锋。","expected":"直接成稿；适当使用海洋学术语，不附冗长审计记录"}
+{"id":"draft-cross","trigger":true,"prompt":"写一段海洋遥感反演方法，用机器学习模型，并交代训练集、验证集和测试集。","expected":"多领域协作；术语语境正确"}
+{"id":"polish-accurate","trigger":true,"prompt":"润色：我们采用随机森林对叶绿素a浓度进行反演，测试集独立于训练集。","expected":"自然润色；保留实验陈述、变量和方法"}
+{"id":"polish-ambiguous","trigger":true,"prompt":"润色：我们用测试集调节超参数，然后报告测试性能。","expected":"不能静默将测试集替换验证集；可简短提示流程问题"}
+{"id":"english-chinese","trigger":true,"prompt":"翻译成适合中文遥感论文的句子：The spectral radiance was converted to reflectance.","expected":"保留不同物理量的概念差异"}
+{"id":"conflicting-terms","trigger":true,"prompt":"海洋光学与遥感正文同时出现散射系数，请统一术语。","expected":"先识别语境，不机械合并同名项"}
+{"id":"ai-modern","trigger":true,"prompt":"润色有关 Vision Transformer 和交叉注意力的中文机器学习方法段。","expected":"正常处理术语库尚未收录的新方法"}
+{"id":"stats-histogram","trigger":true,"prompt":"解释遥感影像直方图与统计学直方图在论文中的用法。","expected":"根据语境区分"}
+{"id":"minor-text","trigger":false,"prompt":"写一首赞美海风的现代诗。","expected":"不触发学术术语流程"}
+{"id":"not-db-creation","trigger":false,"prompt":"把扫描版国标 PDF 逐页 OCR 转成 Markdown。","expected":"属于文档解析工作"}
+{"id":"no-proof-every-term","trigger":true,"prompt":"润色这段海洋学硕士论文摘要，直接返回润色稿。","expected":"不输出每个词的标准号与审计表"}
+{"id":"standards-quote","trigger":true,"prompt":"请指出‘回归分析’在两份相关国标中的条款、定义及来源。","expected":"区分统计学与人工智能术语记录"}
