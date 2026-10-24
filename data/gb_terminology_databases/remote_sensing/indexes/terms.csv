@@ -1,0 +1,595 @@
+id,standard,clause,zh,en,abbr,aliases_zh,aliases_en,physical_pdf_pages,verification
+GB-T-36299-2018:2.8,GB/T 36299—2018,2.8,辐[射]亮度,radiance,,,,5,visually_verified_from_pdf_page
+GB-T-36299-2018:3.6,GB/T 36299—2018,3.6,二向性反射率分布函数,bidirectional reflectance distribution function,BRDF,双向反射率分布函数,,8,visually_verified_from_pdf_page
+GB-T-36299-2018:2.1,GB/T 36299—2018,2.1,[电磁]辐射,[electromagnetic] radiation,,,,4,visually_verified_from_pdf_page
+GB-T-36299-2018:2.2,GB/T 36299—2018,2.2,[电磁]波谱,[electromagnetic] spectrum,,,,4,visually_verified_from_pdf_page
+GB-T-36299-2018:2.3,GB/T 36299—2018,2.3,太阳辐射,solar radiation,,,,4,visually_verified_from_pdf_page
+GB-T-36299-2018:2.4,GB/T 36299—2018,2.4,太阳辐射波谱,solar radiation spectrum,,,,4,visually_verified_from_pdf_page
+GB-T-36299-2018:2.5,GB/T 36299—2018,2.5,辐射能[量],radiant energy,,,,4,visually_verified_from_pdf_page
+GB-T-36299-2018:2.6,GB/T 36299—2018,2.6,辐射通量,radiant flux,,辐射功率,radiant power,4,visually_verified_from_pdf_page
+GB-T-36299-2018:2.7,GB/T 36299—2018,2.7,光谱辐射通量,spectral radiant flux,,,,4,visually_verified_from_pdf_page
+GB-T-36299-2018:2.9,GB/T 36299—2018,2.9,光谱辐[射]亮度,spectral radiance,,,,5,visually_verified_from_pdf_page
+GB-T-36299-2018:2.10,GB/T 36299—2018,2.10,辐[射]照度,irradiance,,,,5,visually_verified_from_pdf_page
+GB-T-36299-2018:2.11,GB/T 36299—2018,2.11,光谱辐[射]照度,spectral irradiance,,,,5,visually_verified_from_pdf_page
+GB-T-36299-2018:2.12,GB/T 36299—2018,2.12,辐[射]出[射]度,radiant exitance,,,,5,visually_verified_from_pdf_page
+GB-T-36299-2018:2.13,GB/T 36299—2018,2.13,辐射强度,radiant intensity,,,,5,visually_verified_from_pdf_page
+GB-T-36299-2018:2.14,GB/T 36299—2018,2.14,光谱辐射强度,spectral radiant intensity,,,,5,visually_verified_from_pdf_page
+GB-T-36299-2018:2.15,GB/T 36299—2018,2.15,单色辐射,monochromatic radiation,,,,5,visually_verified_from_pdf_page
+GB-T-36299-2018:2.16,GB/T 36299—2018,2.16,光学辐射,optical radiation,,,,5,visually_verified_from_pdf_page
+GB-T-36299-2018:2.17,GB/T 36299—2018,2.17,可见[光]辐射,visible radiation,,,,5,visually_verified_from_pdf_page
+GB-T-36299-2018:2.18,GB/T 36299—2018,2.18,紫外辐射,ultraviolet radiation,,,,5,visually_verified_from_pdf_page
+GB-T-36299-2018:2.19,GB/T 36299—2018,2.19,红外辐射,infrared radiation,,,,"5,6",visually_verified_from_pdf_page
+GB-T-36299-2018:2.32,GB/T 36299—2018,2.32,灰体,grey body,,,,7,visually_verified_from_pdf_page
+GB-T-36299-2018:4.29,GB/T 36299—2018,4.29,中红外辐射传输方程,middle infrared radiative transfer model,,,,12,visually_verified_from_pdf_page
+GB-T-36299-2018:4.30,GB/T 36299—2018,4.30,热红外辐射传输方程,thermal infrared radiative transfer model,,,,12,visually_verified_from_pdf_page
+GB-T-36299-2018:2.20,GB/T 36299—2018,2.20,热辐射,thermal radiation,,,,6,visually_verified_from_pdf_page
+GB-T-36299-2018:2.21,GB/T 36299—2018,2.21,反射,reflection,,,,6,visually_verified_from_pdf_page
+GB-T-36299-2018:2.22,GB/T 36299—2018,2.22,吸收,absorption,,,,6,visually_verified_from_pdf_page
+GB-T-36299-2018:2.23,GB/T 36299—2018,2.23,透射,transmission,,,,6,visually_verified_from_pdf_page
+GB-T-36299-2018:2.24,GB/T 36299—2018,2.24,发射,emission,,,,6,visually_verified_from_pdf_page
+GB-T-36299-2018:2.25,GB/T 36299—2018,2.25,散射,scattering,,,,6,visually_verified_from_pdf_page
+GB-T-36299-2018:2.26,GB/T 36299—2018,2.26,漫反射,diffuse reflection,,,,6,visually_verified_from_pdf_page
+GB-T-36299-2018:2.27,GB/T 36299—2018,2.27,镜面反射,mirror reflection,,,,6,visually_verified_from_pdf_page
+GB-T-36299-2018:2.28,GB/T 36299—2018,2.28,体散射,volume scattering,,,,6,visually_verified_from_pdf_page
+GB-T-36299-2018:2.29,GB/T 36299—2018,2.29,散射相函数,scattering phase function,,,,6,visually_verified_from_pdf_page
+GB-T-36299-2018:2.30,GB/T 36299—2018,2.30,朗伯[余弦]定律,Lambert’s [cosine] law,,,,6,visually_verified_from_pdf_page
+GB-T-36299-2018:2.31,GB/T 36299—2018,2.31,[绝对]黑体,[absolute] blackbody,,全辐射体；普朗克辐射体,full radiator; full emitter; Planckian radiator,"6,7",visually_verified_from_pdf_page
+GB-T-36299-2018:2.33,GB/T 36299—2018,2.33,选择性辐射体,selective radiator,,,,7,visually_verified_from_pdf_page
+GB-T-36299-2018:2.34,GB/T 36299—2018,2.34,朗伯[辐射]体,Lambertian radiator,,朗伯[表]面,Lambertian surface,7,visually_verified_from_pdf_page
+GB-T-36299-2018:2.35,GB/T 36299—2018,2.35,点辐射源,point radiant source,,,,7,visually_verified_from_pdf_page
+GB-T-36299-2018:2.36,GB/T 36299—2018,2.36,标准辐射源,standard radiant source,,,,7,visually_verified_from_pdf_page
+GB-T-36299-2018:2.37,GB/T 36299—2018,2.37,吸收系数,absorption coefficient,,,,7,visually_verified_from_pdf_page
+GB-T-36299-2018:2.38,GB/T 36299—2018,2.38,散射系数,scattering coefficient,,,,7,visually_verified_from_pdf_page
+GB-T-36299-2018:2.39,GB/T 36299—2018,2.39,衰减系数,attenuation coefficient,,,,7,visually_verified_from_pdf_page
+GB-T-36299-2018:2.40,GB/T 36299—2018,2.40,太阳常数,solar constant,,,,7,visually_verified_from_pdf_page
+GB-T-36299-2018:3.1,GB/T 36299—2018,3.1,反射率,reflectance,,,,8,visually_verified_from_pdf_page
+GB-T-36299-2018:3.2,GB/T 36299—2018,3.2,吸收率,absorptance,,,,8,visually_verified_from_pdf_page
+GB-T-36299-2018:3.3,GB/T 36299—2018,3.3,透射率,transmittance,,透过率,,8,visually_verified_from_pdf_page
+GB-T-36299-2018:3.4,GB/T 36299—2018,3.4,[半球]发射率,[hemispherical] emissivity,,[半球]比辐射率,,8,visually_verified_from_pdf_page
+GB-T-36299-2018:3.5,GB/T 36299—2018,3.5,地物波谱特性,spectral characteristics of ground objects,,,,8,visually_verified_from_pdf_page
+GB-T-36299-2018:3.7,GB/T 36299—2018,3.7,二向性反射率因子,bidirectional reflectance factor,,双向反射率因子,,8,visually_verified_from_pdf_page
+GB-T-36299-2018:3.8,GB/T 36299—2018,3.8,反照率,albedo,,,,8,visually_verified_from_pdf_page
+GB-T-36299-2018:3.9,GB/T 36299—2018,3.9,方向半球反射率,directional-hemispherical reflectance,,,,8,visually_verified_from_pdf_page
+GB-T-36299-2018:3.10,GB/T 36299—2018,3.10,半球方向反射率,hemispherical-directional reflectance,,,,8,visually_verified_from_pdf_page
+GB-T-36299-2018:3.11,GB/T 36299—2018,3.11,黑天空反照率,black sky albedo,,,,8,visually_verified_from_pdf_page
+GB-T-36299-2018:3.12,GB/T 36299—2018,3.12,白天空反照率,white sky albedo,,,,9,visually_verified_from_pdf_page
+GB-T-36299-2018:3.13,GB/T 36299—2018,3.13,方向发射率,directional emissivity,,方向比辐射率,,9,visually_verified_from_pdf_page
+GB-T-36299-2018:3.14,GB/T 36299—2018,3.14,亮度温度,brightness temperature,,亮温,,9,visually_verified_from_pdf_page
+GB-T-36299-2018:3.15,GB/T 36299—2018,3.15,辐射温度,radiation temperature,,,,9,visually_verified_from_pdf_page
+GB-T-36299-2018:4.1,GB/T 36299—2018,4.1,大气窗口,atmospheric window,,,,9,visually_verified_from_pdf_page
+GB-T-36299-2018:4.2,GB/T 36299—2018,4.2,大气辐射,atmospheric radiation,,,,9,visually_verified_from_pdf_page
+GB-T-36299-2018:4.3,GB/T 36299—2018,4.3,大气上行辐射,atmospheric up-welling radiance,,大气程辐射,atmospheric path radiance,9,visually_verified_from_pdf_page
+GB-T-36299-2018:4.4,GB/T 36299—2018,4.4,大气下行辐射,atmospheric down-welling radiation,,,,9,visually_verified_from_pdf_page
+GB-T-36299-2018:4.5,GB/T 36299—2018,4.5,天空漫射辐射,diffuse sky radiation,,,,9,visually_verified_from_pdf_page
+GB-T-36299-2018:4.6,GB/T 36299—2018,4.6,大气效应,atmospheric effect,,,,9,visually_verified_from_pdf_page
+GB-T-36299-2018:4.7,GB/T 36299—2018,4.7,大气衰减,atmospheric attenuation,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.8,GB/T 36299—2018,4.8,大气吸收,atmospheric absorption,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.9,GB/T 36299—2018,4.9,大气吸收光谱,atmospheric absorption spectrum,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.10,GB/T 36299—2018,4.10,线吸收,line absorption,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.11,GB/T 36299—2018,4.11,连续吸收,continuous absorption,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.12,GB/T 36299—2018,4.12,大气散射,atmospheric scattering,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.13,GB/T 36299—2018,4.13,邻近效应,adjacent effect,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.14,GB/T 36299—2018,4.14,瑞利散射,Rayleigh scattering,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.15,GB/T 36299—2018,4.15,米[氏]散射,Mie scattering,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.16,GB/T 36299—2018,4.16,前向散射,forward scattering,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.17,GB/T 36299—2018,4.17,后向散射,backscattering,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.18,GB/T 36299—2018,4.18,大气气溶胶,atmospheric aerosol,,,,10,visually_verified_from_pdf_page
+GB-T-36299-2018:4.19,GB/T 36299—2018,4.19,大气气溶胶粒子,atmospheric aerosol particle,PM,大气颗粒物,particulate matter,11,visually_verified_from_pdf_page
+GB-T-36299-2018:4.20,GB/T 36299—2018,4.20,气溶胶吸收系数,aerosol absorption coefficient,,,,11,visually_verified_from_pdf_page
+GB-T-36299-2018:4.21,GB/T 36299—2018,4.21,气溶胶散射系数,aerosol scattering coefficient,,,,11,visually_verified_from_pdf_page
+GB-T-36299-2018:4.22,GB/T 36299—2018,4.22,气溶胶消光系数,aerosol extinction coefficient,,,,11,visually_verified_from_pdf_page
+GB-T-36299-2018:4.23,GB/T 36299—2018,4.23,大气透过率,atmospheric transmittance,,,,11,visually_verified_from_pdf_page
+GB-T-36299-2018:4.24,GB/T 36299—2018,4.24,大气光学厚度,atmospheric optical depth,,,,11,visually_verified_from_pdf_page
+GB-T-36299-2018:4.25,GB/T 36299—2018,4.25,气溶胶光学厚度,aerosol optical depth,AOD；AOT,,aerosol optical thickness,11,visually_verified_from_pdf_page
+GB-T-36299-2018:4.26,GB/T 36299—2018,4.26,整层大气气溶胶光学厚度,column aerosol optical depth,,,,11,visually_verified_from_pdf_page
+GB-T-36299-2018:4.27,GB/T 36299—2018,4.27,大气辐射传输模型,atmospheric radiative transfer model,,,,11,visually_verified_from_pdf_page
+GB-T-36299-2018:4.28,GB/T 36299—2018,4.28,短波辐射传输方程,shortwave radiative transfer model,,,,11,visually_verified_from_pdf_page
+GB-T-14950-2009:2.1,GB/T 14950—2009,2.1,摄影测量,photogrammetry,,,,5,visually_verified_from_pdf_page
+GB-T-14950-2009:2.2,GB/T 14950—2009,2.2,航空摄影测量,aerophotogrammetry; aerial photogrammetry,,,,5,visually_verified_from_pdf_page
+GB-T-14950-2009:2.3,GB/T 14950—2009,2.3,航天摄影测量,space photogrammetry,,,,5,visually_verified_from_pdf_page
+GB-T-14950-2009:2.4,GB/T 14950—2009,2.4,地面摄影测量,terrestrial photogrammetry,,,,5,visually_verified_from_pdf_page
+GB-T-14950-2009:2.5,GB/T 14950—2009,2.5,非地形摄影测量,non-topographic photogrammetry,,,,5,visually_verified_from_pdf_page
+GB-T-14950-2009:2.6,GB/T 14950—2009,2.6,全息摄影测量,hologrammetry,,,,5,visually_verified_from_pdf_page
+GB-T-14950-2009:2.7,GB/T 14950—2009,2.7,电子显微摄影测量,nanophotogrammetry,,,,5,visually_verified_from_pdf_page
+GB-T-14950-2009:2.8,GB/T 14950—2009,2.8,双介质摄影测量,two-medium photogrammetry,,,,5,visually_verified_from_pdf_page
+GB-T-14950-2009:2.9,GB/T 14950—2009,2.9,近景摄影测量,close-range photogrammetry,,,,5,visually_verified_from_pdf_page
+GB-T-14950-2009:2.10,GB/T 14950—2009,2.10,超近摄影测量,microphotogrammetry; ultra-close-range photogrammetry,,微距摄影测量,,5,visually_verified_from_pdf_page
+GB-T-14950-2009:2.11,GB/T 14950—2009,2.11,弹道摄影测量,ballistic photogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.12,GB/T 14950—2009,2.12,工程摄影测量,engineering photogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.13,GB/T 14950—2009,2.13,工业摄影测量,industrial photogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.14,GB/T 14950—2009,2.14,建筑摄影测量,architectural photogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.15,GB/T 14950—2009,2.15,考古摄影测量,archaeological photogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.16,GB/T 14950—2009,2.16,生物医学摄影测量,biomedical photogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.17,GB/T 14950—2009,2.17,X射线摄影测量,X-ray photogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.18,GB/T 14950—2009,2.18,水下摄影测量,underwater photogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.19,GB/T 14950—2009,2.19,实时摄影测量,real-time photogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.20,GB/T 14950—2009,2.20,莫尔条纹测量,Moire topography,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.21,GB/T 14950—2009,2.21,侧视雷达测量,side-looking radar survey,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.22,GB/T 14950—2009,2.22,立体摄影测量,stereophotogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.23,GB/T 14950—2009,2.23,模拟摄影测量,analog photogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.24,GB/T 14950—2009,2.24,解析摄影测量,analytical photogrammetry,,,,6,visually_verified_from_pdf_page
+GB-T-14950-2009:2.25,GB/T 14950—2009,2.25,数字摄影测量,digital photogrammetry,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:2.26,GB/T 14950—2009,2.26,IMU/DGPS辅助航空摄影测量,IMU/DGPS supported photogrammetry,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:3.1,GB/T 14950—2009,3.1,遥感,remote sensing,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:3.2,GB/T 14950—2009,3.2,遥感平台,remote sensing platform,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:3.3,GB/T 14950—2009,3.3,航空遥感,aerial remote sensing; airborne remote sensing,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:3.4,GB/T 14950—2009,3.4,航天遥感,space remote sensing; spaceborne remote sensing,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:3.5,GB/T 14950—2009,3.5,星载遥感,satellite remote sensing,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:3.6,GB/T 14950—2009,3.6,地面遥感,ground remote sensing,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:3.7,GB/T 14950—2009,3.7,多谱段遥感,multispectral remote sensing,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:3.8,GB/T 14950—2009,3.8,可见光遥感,visible spectral remote sensing,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:3.9,GB/T 14950—2009,3.9,红外遥感,infrared remote sensing,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:3.10,GB/T 14950—2009,3.10,微波遥感,microwave remote sensing,,,,7,visually_verified_from_pdf_page
+GB-T-14950-2009:3.11,GB/T 14950—2009,3.11,主动式遥感,active remote sensing,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:3.12,GB/T 14950—2009,3.12,被动式遥感,passive remote sensing,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:3.13,GB/T 14950—2009,3.13,激光遥感,laser remote sensing,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:3.14,GB/T 14950—2009,3.14,高光谱遥感,hyperspectral remote sensing,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:4.1,GB/T 14950—2009,4.1,摄影,photography,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:4.2,GB/T 14950—2009,4.2,航天摄影,space photography,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:4.3,GB/T 14950—2009,4.3,卫星摄影,satellite photography,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:4.4,GB/T 14950—2009,4.4,航空摄影,aerial photography,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:4.5,GB/T 14950—2009,4.5,缝隙摄影,differential photography,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:4.6,GB/T 14950—2009,4.6,竖直摄影,vertical photography,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:4.7,GB/T 14950—2009,4.7,倾斜摄影,oblique photography,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:4.8,GB/T 14950—2009,4.8,高空摄影,high-altitude aerial photography,,,,8,visually_verified_from_pdf_page
+GB-T-14950-2009:4.9,GB/T 14950—2009,4.9,低空摄影,low-altitude aerial photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.10,GB/T 14950—2009,4.10,显微摄影,photomicrography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.11,GB/T 14950—2009,4.11,多光谱摄影,multispectral photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.12,GB/T 14950—2009,4.12,数字摄影,digital photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.13,GB/T 14950—2009,4.13,框幅摄影,frame photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.14,GB/T 14950—2009,4.14,全景摄影,panoramic photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.15,GB/T 14950—2009,4.15,黑白摄影,black-and-white photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.16,GB/T 14950—2009,4.16,彩色摄影,colour photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.17,GB/T 14950—2009,4.17,红外摄影,infrared photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.18,GB/T 14950—2009,4.18,彩红外摄影,colour infrared photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.19,GB/T 14950—2009,4.19,正直摄影,normal case photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.20,GB/T 14950—2009,4.20,等偏摄影,parallel-averted photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.21,GB/T 14950—2009,4.21,交向摄影,convergent photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.22,GB/T 14950—2009,4.22,等倾摄影,equally tilted photography,,,,9,visually_verified_from_pdf_page
+GB-T-14950-2009:4.23,GB/T 14950—2009,4.23,地物阴影倍数,multiple of object shadow,,,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.24,GB/T 14950—2009,4.24,太阳高度角,solar elevation,,,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.25,GB/T 14950—2009,4.25,太阳方位角,solar azimuth,,,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.26,GB/T 14950—2009,4.26,航摄领航,navigation of aerial photography,,,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.27,GB/T 14950—2009,4.27,雷达导航,radar navigation,,,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.28,GB/T 14950—2009,4.28,多普勒导航,Doppler navigation,,,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.29,GB/T 14950—2009,4.29,惯性导航,inertial navigation,,,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.30,GB/T 14950—2009,4.30,全球卫星导航系统,global navigation satellite system;GNSS,GNSS,,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.31,GB/T 14950—2009,4.31,GPS导航,GPS navigation,,,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.32,GB/T 14950—2009,4.32,动态GPS摄影站定位,dynamic GPS positioning of camera station,,,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.33,GB/T 14950—2009,4.33,摄站,camera station;exposure station,,摄影中心,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.34,GB/T 14950—2009,4.34,摄影航线,flight line of aerial photography,,,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.35,GB/T 14950—2009,4.35,摄影分区,flight block,,航摄分区,,10,visually_verified_from_pdf_page
+GB-T-14950-2009:4.36,GB/T 14950—2009,4.36,分区基准面,block datum plane,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.37,GB/T 14950—2009,4.37,摄影比例尺,photographic scale,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.38,GB/T 14950—2009,4.38,像片比例尺,photo scale,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.39,GB/T 14950—2009,4.39,摄影航高,photographic flying height,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.40,GB/T 14950—2009,4.40,绝对航高,absolute flying height,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.41,GB/T 14950—2009,4.41,相对航高,relative flying height,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.42,GB/T 14950—2009,4.42,摄影基线,photographic baseline,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.43,GB/T 14950—2009,4.43,像片基线,photo base,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.44,GB/T 14950—2009,4.44,基高比,base-height ratio,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.45,GB/T 14950—2009,4.45,航摄飞行质量,flight quality of aerial photography,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.46,GB/T 14950—2009,4.46,摄影航迹,flight trace of photography,,航迹线,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.47,GB/T 14950—2009,4.47,航迹角,angle of flying trace,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.48,GB/T 14950—2009,4.48,航线弯曲度,strip deformation,,,,11,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.49,GB/T 14950—2009,4.49,航摄漏洞,aerial photographic gap,,,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.50,GB/T 14950—2009,4.50,相对漏洞,relative gap,,,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.51,GB/T 14950—2009,4.51,绝对漏洞,absolute gap,,,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.52,GB/T 14950—2009,4.52,摄影质量,photographic quality,,,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.53,GB/T 14950—2009,4.53,航向重叠,longitudinal overlap;end overlap;forward overlap,,,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.54,GB/T 14950—2009,4.54,旁向重叠,lateral overlap;side overlap;side lap,,,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.55,GB/T 14950—2009,4.55,测图航线,mapping strip,,,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.56,GB/T 14950—2009,4.56,控制航线,control strip,,构架航线；骨架航线,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.57,GB/T 14950—2009,4.57,像片倾斜角,tilt angle of photograph,,,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.58,GB/T 14950—2009,4.58,航向倾角,longitudinal tilt;pitch,,,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.59,GB/T 14950—2009,4.59,旁向倾角,lateral tilt;roll,,,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.60,GB/T 14950—2009,4.60,像片旋角,swing angle;yaw,,,,12,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.61,GB/T 14950—2009,4.61,像主点,principal point of photograph,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.62,GB/T 14950—2009,4.62,最佳对称主点,principal point of optimum symmetry,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.63,GB/T 14950—2009,4.63,自准直主点,autocollimating principal point,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.64,GB/T 14950—2009,4.64,像底点,photo nadir point,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.65,GB/T 14950—2009,4.65,地底点,ground nadir point,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.66,GB/T 14950—2009,4.66,等角点,equal-angle point;isocenter,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.67,GB/T 14950—2009,4.67,像元,pixel;picture element,,像素,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.68,GB/T 14950—2009,4.68,像幅,picture format,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.69,GB/T 14950—2009,4.69,等效主距,equivalent principal-distance,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.70,GB/T 14950—2009,4.70,检定主距,calibrated principal-distance,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.71,GB/T 14950—2009,4.71,框标,fiducial mark,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.72,GB/T 14950—2009,4.72,框标距,distance of fiducial marks,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.73,GB/T 14950—2009,4.73,像片中心,photograph center,,,,13,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.74,GB/T 14950—2009,4.74,摄影机检定场,camera calibration field,,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.75,GB/T 14950—2009,4.75,摄影分辨率,resolution of photography,,分解率；解像率,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.76,GB/T 14950—2009,4.76,影像分辨率,image resolution,,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.77,GB/T 14950—2009,4.77,地面分辨率,ground resolution,,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.78,GB/T 14950—2009,4.78,面积加权平均分辨率,area weighted average resolution;AWAR,AWAR,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.79,GB/T 14950—2009,4.79,角分辨率,angle resolution,,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.80,GB/T 14950—2009,4.80,影像密度,density of image,,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.81,GB/T 14950—2009,4.81,灰雾密度,fog density,,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.82,GB/T 14950—2009,4.82,感光度,light sensitivity,,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.83,GB/T 14950—2009,4.83,影像反差,image contrast,,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.84,GB/T 14950—2009,4.84,景物反差,object contrast,,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.85,GB/T 14950—2009,4.85,反差系数,contrast coefficient,,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.86,GB/T 14950—2009,4.86,胶片压平,film flattening,,,,14,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.87,GB/T 14950—2009,4.87,地面照度,illuminance of ground,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.88,GB/T 14950—2009,4.88,光谱感光度,spectral sensitivity,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.89,GB/T 14950—2009,4.89,相对光谱感光度,relative spectral sensitivity,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.90,GB/T 14950—2009,4.90,感色性,colour sensitivity,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.91,GB/T 14950—2009,4.91,飞机地速,ground speed of plane,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.92,GB/T 14950—2009,4.92,速高比,velocity-height ratio,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.93,GB/T 14950—2009,4.93,像点位移,displacement of image;image displacement,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.94,GB/T 14950—2009,4.94,前移补偿,forward motion compensation;FMC,FMC,像移补偿,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.95,GB/T 14950—2009,4.95,摄影材料变形,photographic material deformation,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.96,GB/T 14950—2009,4.96,镜头畸变,lens distortion,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.97,GB/T 14950—2009,4.97,摄影测量畸变,photogrammetric distortion,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.98,GB/T 14950—2009,4.98,影像数据采集,image data acquisition,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.99,GB/T 14950—2009,4.99,波谱能量分布,spectral energy distribution,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.100,GB/T 14950—2009,4.100,波谱发射率,spectral emissivity,,,,15,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.101,GB/T 14950—2009,4.101,波谱反射率,spectral reflectivity,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.102,GB/T 14950—2009,4.102,波谱透射率,spectral transmissivity,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.103,GB/T 14950—2009,4.103,辐射分辨率,radiometric resolution;radiation resolution,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.104,GB/T 14950—2009,4.104,瞬时视场,instantaneous field of view;IFOV,IFOV,空间分辨率,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.105,GB/T 14950—2009,4.105,时间分辨率,temporal resolution,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.106,GB/T 14950—2009,4.106,波谱分辨率,spectral resolution,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.107,GB/T 14950—2009,4.107,扫描分辨率,scan resolution,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.108,GB/T 14950—2009,4.108,太阳辐射波谱,solar radiation spectrum,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.109,GB/T 14950—2009,4.109,电磁波谱,electromagnetic spectrum,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.110,GB/T 14950—2009,4.110,大气窗口,atmospheric window,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.111,GB/T 14950—2009,4.111,大气噪声,atmospheric noise,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.112,GB/T 14950—2009,4.112,大气传输特性,characteristic of atmospheric transmission,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.113,GB/T 14950—2009,4.113,大气透过率,atmospheric transmissivity;atmospheric transmittance,,,,16,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.114,GB/T 14950—2009,4.114,地物波谱特性,object spectrum characteristic,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.115,GB/T 14950—2009,4.115,卫星轨道参数,orbit elements of satellite;orbit parameters of satellite,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.116,GB/T 14950—2009,4.116,轨道高度,orbital altitude,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.117,GB/T 14950—2009,4.117,轨道倾角,orbital inclination,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.118,GB/T 14950—2009,4.118,卫星摄动,satellite perturbance,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.119,GB/T 14950—2009,4.119,卫星姿态,satellite attitude,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.120,GB/T 14950—2009,4.120,卫星覆盖范围,satellite coverage,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.121,GB/T 14950—2009,4.121,卫星运行周期,revolution period of satellite,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.122,GB/T 14950—2009,4.122,卫星重复周期,repetition period of satellite,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.123,GB/T 14950—2009,4.123,地球同步轨道,geosynchronous orbit;earth synchronous,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.124,GB/T 14950—2009,4.124,全景畸变,panoramic distortion,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.125,GB/T 14950—2009,4.125,卫星影像偏斜,satellite photograph skew;satellite photograph deflection,,,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.126,GB/T 14950—2009,4.126,像片控制测量,photo control survey,,像片控制点联测,,17,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.127,GB/T 14950—2009,4.127,像片控制点,photo control point,,,,18,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.128,GB/T 14950—2009,4.128,像片平高控制点,horizontal and vertical photo control point;full control point,,平高控制点,,18,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.129,GB/T 14950—2009,4.129,像片平面控制点,horizontal photo control point,,平面控制点,,18,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.130,GB/T 14950—2009,4.130,像片高程控制点,vertical(elevation)photo control point,,高程控制点,,18,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.131,GB/T 14950—2009,4.131,明显地物点,outstanding point;natural point,,,,18,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.132,GB/T 14950—2009,4.132,人工标志(点),artificial target;signalized point;artificial point,,,,18,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.133,GB/T 14950—2009,4.133,像片标准点,photographic normal point;standard point of photo;Gruber point,,像片标准配置点；格鲁伯点,,18,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.134,GB/T 14950—2009,4.134,航线网布点,control point distribution for aerial triangulation strip,,,,18,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.135,GB/T 14950—2009,4.135,区域网布点,control point distribution for block aerotriangulation,,,,18,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.136,GB/T 14950—2009,4.136,全野外布点,full field control point distribution,,,,18,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.137,GB/T 14950—2009,4.137,控制航线布点,control point distribution for control(skeleton)strip,,构架航线布点；骨架航线布点,,18,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.138,GB/T 14950—2009,4.138,航向控制点跨度,bridging distance of control points along strips;control point interval along strips,,,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.139,GB/T 14950—2009,4.139,旁向控制点跨度,bridging distance of control points cross strips;control point interval cross strips,,,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.140,GB/T 14950—2009,4.140,综合法单张像片测图,photo-planimetric method of single photograph mapping,,,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.141,GB/T 14950—2009,4.141,综合法像片图测图,photo-planimetric method of photoplan mapping,,,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.142,GB/T 14950—2009,4.142,桩点法测图,pegged point mapping,,,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.143,GB/T 14950—2009,4.143,像片判读,photo interpretation,,像片解译,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.144,GB/T 14950—2009,4.144,目视判读,visual interpretation,,,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.145,GB/T 14950—2009,4.145,调绘,annotation,,,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.146,GB/T 14950—2009,4.146,单站时间视差法,time parallax at a single station,,时间基线视差法,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.147,GB/T 14950—2009,4.147,相对控制,relative control,,,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.148,GB/T 14950—2009,4.148,摄影纵距,longitudinal distance of photography,,,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.149,GB/T 14950—2009,4.149,摄影系数,photographic coefficient,,,,19,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.150,GB/T 14950—2009,4.150,激光雷达,Lidar,,,,20,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.151,GB/T 14950—2009,4.151,合成孔径雷达,synthetic aperture radar;SAR,SAR,,,20,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.152,GB/T 14950—2009,4.152,激光雷达测深系统,lidar bathymetric system,,,,20,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:4.153,GB/T 14950—2009,4.153,雷达测高,radar altimetry,,,,20,source_page_reviewed_and_definition_text_exact
+GB-T-14950-2009:5.1,GB/T 14950—2009,5.1,摄影处理,photographic processing,,,,20,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.2,GB/T 14950—2009,5.2,反转摄影处理,reversal photographic processing,,,,20,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.3,GB/T 14950—2009,5.3,正片,positive,,,,20,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.4,GB/T 14950—2009,5.4,负片,negative,,,,20,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.5,GB/T 14950—2009,5.5,裱板像片,coated photograph,,,,20,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.6,GB/T 14950—2009,5.6,接触晒印,contact printing,,,,20,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.7,GB/T 14950—2009,5.7,投影晒印,projection printing,,,,20,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.8,GB/T 14950—2009,5.8,反光缩小,reflecting reduction,,,,20,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.9,GB/T 14950—2009,5.9,透光缩小,transmitting reduction,,,,20,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.10,GB/T 14950—2009,5.10,电子印相,electronic printing,,,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.11,GB/T 14950—2009,5.11,像片纠正,photo rectification; rectification of photograph,,,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.12,GB/T 14950—2009,5.12,像片内方位元素,elements of interior orientation; interior orientation elements,,像片内定向元素,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.13,GB/T 14950—2009,5.13,像片外方位元素,elements of exterior orientation; exterior orientation elements,,像片外定向元素,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.14,GB/T 14950—2009,5.14,纠正点,rectification point,,,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.15,GB/T 14950—2009,5.15,图解纠正,graphical rectification,,,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.16,GB/T 14950—2009,5.16,光学图解纠正,optical graphical rectification,,投影转绘,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.17,GB/T 14950—2009,5.17,仿射纠正,affine rectification,,,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.18,GB/T 14950—2009,5.18,投影差,relief displacement,,,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.19,GB/T 14950—2009,5.19,纠正带距,distance of rectification zone,,,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.20,GB/T 14950—2009,5.20,分带纠正,zonal rectification,,,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.21,GB/T 14950—2009,5.21,多级纠正,multistage rectification,,,,21,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.22,GB/T 14950—2009,5.22,光距条件,distance condition,,,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.23,GB/T 14950—2009,5.23,交线条件,condition of intersection; scheimpflug condition,,向甫鲁条件,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.24,GB/T 14950—2009,5.24,纠正光学条件,optical condition of rectification,,,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.25,GB/T 14950—2009,5.25,纠正几何条件,geometric condition of rectification,,,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.26,GB/T 14950—2009,5.26,纠正仪自由度,degree of freedom of a rectifying,,,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.27,GB/T 14950—2009,5.27,合点,vanishing point,,,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.28,GB/T 14950—2009,5.28,主合点,principal vanishing point,,,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.29,GB/T 14950—2009,5.29,主遁点,main vanishing point,,,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.30,GB/T 14950—2009,5.30,透视旋转定律,rotation axiom of the perspective; axiom of the perspective rotation,,沙尔定律,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.31,GB/T 14950—2009,5.31,透视变换,perspective transformation,,,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.32,GB/T 14950—2009,5.32,像片镶嵌,photo mosaic,,切割镶嵌,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.33,GB/T 14950—2009,5.33,光学镶嵌,optical mosaic,,,,22,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.34,GB/T 14950—2009,5.34,微分纠正,differential rectification,,,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.35,GB/T 14950—2009,5.35,正射投影技术,orthophotography; orthophoto technique,,,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.36,GB/T 14950—2009,5.36,多项式纠正,polynomial correction,,,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.37,GB/T 14950—2009,5.37,仿射变换,affine rectification,,,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.38,GB/T 14950—2009,5.38,光学微分纠正,optical differential rectification,,缝隙纠正,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.39,GB/T 14950—2009,5.39,电子微分纠正,electronic differential rectification,,,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.40,GB/T 14950—2009,5.40,解析纠正,analytical rectification,,,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.41,GB/T 14950—2009,5.41,数字纠正,digital rectification,,数字微分纠正,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.42,GB/T 14950—2009,5.42,数字镶嵌,digital mosaic,,,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.43,GB/T 14950—2009,5.43,断面数据采集,profile data collecting,,,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.44,GB/T 14950—2009,5.44,断面带间距,distance between profiles,,,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.45,GB/T 14950—2009,5.45,缝隙长度,slit length; crack length,,,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.46,GB/T 14950—2009,5.46,缝隙宽度,slit width; crack width,,,,23,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.47,GB/T 14950—2009,5.47,断面扫描,profile scanning,,,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.48,GB/T 14950—2009,5.48,视差,parallax,,,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.49,GB/T 14950—2009,5.49,同名像点,corresponding image points; homologous image points,,,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.50,GB/T 14950—2009,5.50,同名光线,corresponding image rays,,,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.51,GB/T 14950—2009,5.51,核线,epipolar ray; epipolar line,,,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.52,GB/T 14950—2009,5.52,核线影像,epipolar ray image,,,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.53,GB/T 14950—2009,5.53,上下视差,vertical parallax; Y-parallax,,Y-视差,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.54,GB/T 14950—2009,5.54,左右视差,horizontal parallax; X-parallax,,X-视差,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.55,GB/T 14950—2009,5.55,左右视差较,horizontal parallax difference,,,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.56,GB/T 14950—2009,5.56,空间前方交会,spacial intersection,,,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.57,GB/T 14950—2009,5.57,空间后方交会,spacial resection,,,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.58,GB/T 14950—2009,5.58,像平面坐标系,photo coordinate system,,,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.59,GB/T 14950—2009,5.59,车架坐标系,carriage coordinate system; stage coordinate system,,仪器坐标系,,24,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.60,GB/T 14950—2009,5.60,像方空间坐标系,image space coordinate system,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.61,GB/T 14950—2009,5.61,物方空间坐标系,object space coordinate system,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.62,GB/T 14950—2009,5.62,摄影测量坐标系,photogrammetric coordinate system,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.63,GB/T 14950—2009,5.63,光学立体模型,optical stereoscopic model,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.64,GB/T 14950—2009,5.64,几何立体模型,geometric stereoscopic model,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.65,GB/T 14950—2009,5.65,立体观察,stereoscopic view,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.66,GB/T 14950—2009,5.66,构像方程,imaging equation,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.67,GB/T 14950—2009,5.67,共线方程,collinearity equation,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.68,GB/T 14950—2009,5.68,投影方程,projection equation,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.69,GB/T 14950—2009,5.69,共面方程,coplanarity equation,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.70,GB/T 14950—2009,5.70,直接线性变换,direct linear transformation; DLT,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.71,GB/T 14950—2009,5.71,辐射三角测量,radial triangulation,,,,25,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.72,GB/T 14950—2009,5.72,空中三角测量,aerotriangulation; aerial triangulation,,,,"25,26",source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.73,GB/T 14950—2009,5.73,模拟法空中三角测量,analog aerotriangulation; analog aerial triangulation,,,,26,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.74,GB/T 14950—2009,5.74,解析空中三角测量,analytical aerotriangulation; analytical aerial triangulation,,电算加密,,26,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.75,GB/T 14950—2009,5.75,数字空中三角测量,digital aerotriangulation; digital aerial triangulation,,,,26,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.76,GB/T 14950—2009,5.76,单航带解析空中三角测量,analytical aerotriangulation in a single strip,,,,26,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.77,GB/T 14950—2009,5.77,区域网空中三角测量,block triangulation; block aerial triangulation,,区域网加密,,26,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.78,GB/T 14950—2009,5.78,航带法区域网空中三角测量,strip aerial triangulation,,航线法区域网加密,,26,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.79,GB/T 14950—2009,5.79,独立模型法空中三角测量,independent model aerial triangulation; aerotriangulation by independent model,,独立模型法区域网加密,,26,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.80,GB/T 14950—2009,5.80,光束法区域网空中三角测量,bundle aerial triangulation,,光线束法区域网加密,,26,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.81,GB/T 14950—2009,5.81,联机空中三角测量,on-line aerophotogrammetric triangulation,,在线空中三角测量,,26,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.82,GB/T 14950—2009,5.82,GPS辅助空中三角测量,GPS supported aerotriangulation,,,,26,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.83,GB/T 14950—2009,5.83,区域网平差,block adjustment,,,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.84,GB/T 14950—2009,5.84,自检法区域网平差,self-calibrating block adjustment,,,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.85,GB/T 14950—2009,5.85,加密点,pass point; densification point,,,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.86,GB/T 14950—2009,5.86,连接点,tie point,,模型连接点,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.87,GB/T 14950—2009,5.87,定向点,orientation point,,,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.88,GB/T 14950—2009,5.88,检查点,checking point,,,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.89,GB/T 14950—2009,5.89,立体像对,stereopair,,像对,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.90,GB/T 14950—2009,5.90,像点坐标,image coordinate; coordinate of a photo point,,,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.91,GB/T 14950—2009,5.91,模型坐标,model coordinate,,,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.92,GB/T 14950—2009,5.92,立体量测,stereomeasurement,,,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.93,GB/T 14950—2009,5.93,像片归心,photo centering,,,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.94,GB/T 14950—2009,5.94,像片基线定向,photo-base orientation,,方位线定向,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.95,GB/T 14950—2009,5.95,辅助点定向,auxiliary point orientation,,,,27,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.96,GB/T 14950—2009,5.96,内部定向,interior orientation,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.97,GB/T 14950—2009,5.97,解析内定向,analytical interior orientation,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.98,GB/T 14950—2009,5.98,外部定向,exterior orientation,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.99,GB/T 14950—2009,5.99,相对定向,relative orientation,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.100,GB/T 14950—2009,5.100,连续像对相对定向,relative orientation of conjunction of successive photographs,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.101,GB/T 14950—2009,5.101,单独像对相对定向,relative orientation of independent photo pair,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.102,GB/T 14950—2009,5.102,相对定向不定性,uncertainty of relative orientation,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.103,GB/T 14950—2009,5.103,相对定向元素,elements of relative orientation,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.104,GB/T 14950—2009,5.104,绝对定向,absolute orientation,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.105,GB/T 14950—2009,5.105,绝对定向元素,elements of absolute orientation,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.106,GB/T 14950—2009,5.106,模型缩放,scaling of model,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.107,GB/T 14950—2009,5.107,模型置平,leveling of model,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.108,GB/T 14950—2009,5.108,模型连接,bridging of model; model connection,,,,28,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.109,GB/T 14950—2009,5.109,摄影测量网,photogrammetric network,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.110,GB/T 14950—2009,5.110,空间相似变换,space similarity transformation,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.111,GB/T 14950—2009,5.111,粗差检测,gross error detection,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.112,GB/T 14950—2009,5.112,数据探测法,data snooping method,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.113,GB/T 14950—2009,5.113,选权迭代法,iteration method with variable weights,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.114,GB/T 14950—2009,5.114,主距改正,reduction for principal-distance,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.115,GB/T 14950—2009,5.115,立体测图,stereomapping; stereoplotting,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.116,GB/T 14950—2009,5.116,模拟测图,analog photogrammetric plotting,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.117,GB/T 14950—2009,5.117,分工法测图,differential method of photogrammetry,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.118,GB/T 14950—2009,5.118,全能法测图,universal method of photogrammetry,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.119,GB/T 14950—2009,5.119,机助测图,computer-assisted mapping; computer-aided mapping,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.120,GB/T 14950—2009,5.120,解析测图,analytical mapping; analytical plotting,,,,29,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.121,GB/T 14950—2009,5.121,数字测图,digital mapping,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.122,GB/T 14950—2009,5.122,数控绘图,digital controlled drawing,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.123,GB/T 14950—2009,5.123,地图修测,map revision,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.124,GB/T 14950—2009,5.124,单像测图,monoplotting,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.125,GB/T 14950—2009,5.125,数字地图修测,digital map revision,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.126,GB/T 14950—2009,5.126,遥感制图,remote sensing cartography; remote sensing mapping,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.127,GB/T 14950—2009,5.127,投影器主距,principal distance of projector,,投影仪主距,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.128,GB/T 14950—2009,5.128,中心投影,central projection,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.129,GB/T 14950—2009,5.129,光学投影,optical projection,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.130,GB/T 14950—2009,5.130,机械投影,mechanical projection,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.131,GB/T 14950—2009,5.131,光学机械投影,optical-mechanical projection,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.132,GB/T 14950—2009,5.132,数字投影,digital projection,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.133,GB/T 14950—2009,5.133,模型比例尺,model scale,,,,30,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.134,GB/T 14950—2009,5.134,模型基线,model baseline,,,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.135,GB/T 14950—2009,5.135,测标,measuring mark; floating mark,,浮游测标,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.136,GB/T 14950—2009,5.136,立体照准,stereoscopic pointing,,,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.137,GB/T 14950—2009,5.137,绘图桌定向,plotting table orientation; plotter orientation,,图纸定向,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.138,GB/T 14950—2009,5.138,立体描绘,stereoscopic drawing,,,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.139,GB/T 14950—2009,5.139,立体转绘,stereoscopic transfer,,,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.140,GB/T 14950—2009,5.140,图形编辑,graphic editing,,,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.141,GB/T 14950—2009,5.141,图形输出,graphic output; pattern printout,,,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.142,GB/T 14950—2009,5.142,数据输出,data output,,,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.143,GB/T 14950—2009,5.143,影像匹配,image matching,,,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.144,GB/T 14950—2009,5.144,目标区,target area; region of target,,,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.145,GB/T 14950—2009,5.145,搜索区,searching area; region of search,,,,31,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.146,GB/T 14950—2009,5.146,影像相关,image correlation,,,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.147,GB/T 14950—2009,5.147,电子相关,electronic correlation,,,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.148,GB/T 14950—2009,5.148,光学相关,optical correlation,,,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.149,GB/T 14950—2009,5.149,核线相关,epipolar correlation,,,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.150,GB/T 14950—2009,5.150,数字相关,digital correlation,,,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.151,GB/T 14950—2009,5.151,一维相关,one-dimensional correlation,,,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.152,GB/T 14950—2009,5.152,二维相关,two-dimensional correlation,,,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.153,GB/T 14950—2009,5.153,最小二乘相关,least square correlation,,,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.154,GB/T 14950—2009,5.154,量化,quantizing; quantization,,,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.155,GB/T 14950—2009,5.155,灰度等级,grey level; grey value,,,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.156,GB/T 14950—2009,5.156,灰楔,grey wedge; optical wedge,,灰卡,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.157,GB/T 14950—2009,5.157,采样,sampling,,取样；抽样,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.158,GB/T 14950—2009,5.158,影像重采样,image resampling,,,,32,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.159,GB/T 14950—2009,5.159,采样间隔,sampling interval,,取样间隔；抽样间隔,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.160,GB/T 14950—2009,5.160,数字影像,digital image,,,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.161,GB/T 14950—2009,5.161,光学影像,optical image,,,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.162,GB/T 14950—2009,5.162,基于灰度影像匹配,grey value based matching; area based matching,,,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.163,GB/T 14950—2009,5.163,基于特征影像匹配,feature based matching,,,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.164,GB/T 14950—2009,5.164,基于解译影像匹配,interpretation based matching,,,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.165,GB/T 14950—2009,5.165,特征提取,feature extraction,,,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.166,GB/T 14950—2009,5.166,图像处理,image processing,,,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.167,GB/T 14950—2009,5.167,光学图像处理,optical image processing,,,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.168,GB/T 14950—2009,5.168,数字图像处理,digital image processing,,,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.169,GB/T 14950—2009,5.169,影像预处理,image preprocessing,,,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.170,GB/T 14950—2009,5.170,粗处理,bulk processing; rude processing,,,,33,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.171,GB/T 14950—2009,5.171,精处理,precision processing; refined processing,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.172,GB/T 14950—2009,5.172,信息量,contents of information; entropy,,熵,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.173,GB/T 14950—2009,5.173,信息提取,information extraction,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.174,GB/T 14950—2009,5.174,冗余码,redundant code,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.175,GB/T 14950—2009,5.175,信息剩余度,redundancy of information,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.176,GB/T 14950—2009,5.176,熵编码,entropy coding,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.177,GB/T 14950—2009,5.177,图像数字化,image digitization,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.178,GB/T 14950—2009,5.178,图像符号化,image symbolization,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.179,GB/T 14950—2009,5.179,图像编码,image coding,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.180,GB/T 14950—2009,5.180,图像变换,image transformation,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.181,GB/T 14950—2009,5.181,变换核,kernel of transformation,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.182,GB/T 14950—2009,5.182,哈达马变换,Hadamard transformation,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.183,GB/T 14950—2009,5.183,沃尔什变换,Walsh transformation,,,,34,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.184,GB/T 14950—2009,5.184,比值变换,ratio transformation,,,,"34,35",source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.185,GB/T 14950—2009,5.185,生物量指标变换,biomass index transformation,,,,35,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.186,GB/T 14950—2009,5.186,穗帽变换,tasseled cap transformation,,,,35,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.187,GB/T 14950—2009,5.187,主分量变换,principal component transformation,,,,35,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.188,GB/T 14950—2009,5.188,彩色变换,colour transformation,,,,35,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.189,GB/T 14950—2009,5.189,小波变换,wavelet transform,,,,35,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.190,GB/T 14950—2009,5.190,几何校正,geometric correction,,几何校准,,35,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.191,GB/T 14950—2009,5.191,大气校正,atmospheric correction,,,,35,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.192,GB/T 14950—2009,5.192,图像复原,image restoration,,图像恢复,,35,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.193,GB/T 14950—2009,5.193,图像重建,image reconstruction,,,,35,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.194,GB/T 14950—2009,5.194,几何配准,geometric registration,,,,35,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.195,GB/T 14950—2009,5.195,辐射校正,radiometric correction,,,,35,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.196,GB/T 14950—2009,5.196,直接法纠正,direct scheme of digital rectification,,直接变换法纠正,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.197,GB/T 14950—2009,5.197,间接法纠正,indirect scheme of digital rectification,,间接变换法纠正,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.198,GB/T 14950—2009,5.198,图像增强,image enhancement,,,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.199,GB/T 14950—2009,5.199,影像融合,image fusion,,,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.200,GB/T 14950—2009,5.200,影像金字塔,image pyramid,,,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.201,GB/T 14950—2009,5.201,植被指数,vegetation index; VI,,,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.202,GB/T 14950—2009,5.202,直方图,histogram,,,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.203,GB/T 14950—2009,5.203,图像直方图,image histogram,,,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.204,GB/T 14950—2009,5.204,直方图修改,histogram correction; histogram modification,,,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.205,GB/T 14950—2009,5.205,直方图均衡化,histogram equalization,,,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.206,GB/T 14950—2009,5.206,反差增强,contrast enhancement,,,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.207,GB/T 14950—2009,5.207,线性扩展,linear expanding; linear stretching,,线性拉伸,,36,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.208,GB/T 14950—2009,5.208,非线性扩展,non-linear expanding,,,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.209,GB/T 14950—2009,5.209,图像平滑,image smoothing,,,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.210,GB/T 14950—2009,5.210,边缘增强,edge enhancement,,,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.211,GB/T 14950—2009,5.211,滤波,filtering,,,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.212,GB/T 14950—2009,5.212,高通滤波,high-pass filtering,,,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.213,GB/T 14950—2009,5.213,低通滤波,lower-pass filtering,,,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.214,GB/T 14950—2009,5.214,空间域滤波,spatial filtering,,空间滤波,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.215,GB/T 14950—2009,5.215,频率域滤波,frequency filtering,,频率滤波,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.216,GB/T 14950—2009,5.216,相关掩模技术,correlation mask techniques,,,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.217,GB/T 14950—2009,5.217,邻区法增强,adjacent enhancement,,,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.218,GB/T 14950—2009,5.218,纹理增强,texture enhancement,,,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.219,GB/T 14950—2009,5.219,比值增强,ratio enhancement,,,,37,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.220,GB/T 14950—2009,5.220,密度分割,density slicing,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.221,GB/T 14950—2009,5.221,图像压缩,image compression,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.222,GB/T 14950—2009,5.222,有损压缩,data compression with loss,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.223,GB/T 14950—2009,5.223,无损压缩,data compression without loss,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.224,GB/T 14950—2009,5.224,数据格式,data format,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.225,GB/T 14950—2009,5.225,图像分割,image segmentation,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.226,GB/T 14950—2009,5.226,图像合成,image composite,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.227,GB/T 14950—2009,5.227,彩色合成,colour composite,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.228,GB/T 14950—2009,5.228,假彩色合成,false colour composite,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.229,GB/T 14950—2009,5.229,彩色编码,colour coding,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.230,GB/T 14950—2009,5.230,彩色坐标系,colour coordinate system,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.231,GB/T 14950—2009,5.231,多时相分析,multi-temporal analysis,,,,38,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.232,GB/T 14950—2009,5.232,多重影像增强,multi-image enhancement,,,,"38,39",source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.233,GB/T 14950—2009,5.233,图像分类,image classification,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.234,GB/T 14950—2009,5.234,特征选择,feature selection,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.235,GB/T 14950—2009,5.235,波谱特征空间,spectrum feature space,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.236,GB/T 14950—2009,5.236,波谱集群,spectrum cluster,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.237,GB/T 14950—2009,5.237,模式识别,pattern recognition,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.238,GB/T 14950—2009,5.238,判别函数,discriminant function,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.239,GB/T 14950—2009,5.239,训练区,training area,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.240,GB/T 14950—2009,5.240,监督分类,supervised classification,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.241,GB/T 14950—2009,5.241,判别边界,boundary distinguish; decision boundary,,判别界线,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.242,GB/T 14950—2009,5.242,距离判决函数,distance decision function,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.243,GB/T 14950—2009,5.243,概率判决函数,probability decision function,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.244,GB/T 14950—2009,5.244,平行六面体分类,parallelepiped classification,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.245,GB/T 14950—2009,5.245,模糊分类法,fuzzy classification,,,,39,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.246,GB/T 14950—2009,5.246,最小距离分类,minimum distance classification,,,,40,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.247,GB/T 14950—2009,5.247,最大似然分类,maximum likelihood classification,,,,40,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.248,GB/T 14950—2009,5.248,特征曲线—窗口法监督分类,character curve-window based supervised classification,,,,40,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.249,GB/T 14950—2009,5.249,非监督分类,unsupervised classification,,,,40,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.250,GB/T 14950—2009,5.250,等混合距离法分类,equal mixture distance classification,,,,40,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.251,GB/T 14950—2009,5.251,集群分析,cluster analysis,,聚类分析,,40,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.252,GB/T 14950—2009,5.252,联合分类,joint classification,,,,40,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.253,GB/T 14950—2009,5.253,多重判据分类,multi-layer data classification,,,,40,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.254,GB/T 14950—2009,5.254,树分类,tree classification,,,,40,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.255,GB/T 14950—2009,5.255,景物特征,object character,,,,40,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:5.256,GB/T 14950—2009,5.256,图像判读专家系统,expert system of image interpretation,,,,40,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.1,GB/T 14950—2009,6.1,航摄像片,aerial photograph,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.2,GB/T 14950—2009,6.2,像片索引图,index to photography,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.3,GB/T 14950—2009,6.3,航空摄影像片中心点结合图,index graph of aerial photograph principal point,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.4,GB/T 14950—2009,6.4,控制像片,control photograph,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.5,GB/T 14950—2009,6.5,调绘像片,annotated photograph; identified photograph,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.6,GB/T 14950—2009,6.6,调绘工作底图,investigation map,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.7,GB/T 14950—2009,6.7,纠正底图,basis for rectification,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.8,GB/T 14950—2009,6.8,影像镶嵌图,image mosaic map,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.9,GB/T 14950—2009,6.9,影像镶嵌略图,photomosaic,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.10,GB/T 14950—2009,6.10,航测原图,aerophotogrammetric original,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.11,GB/T 14950—2009,6.11,复照原图,reprographic original,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.12,GB/T 14950—2009,6.12,清绘原图,final drawing; fair drawing,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.13,GB/T 14950—2009,6.13,刻绘原图,scribed original,,,,41,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.14,GB/T 14950—2009,6.14,正射像片,orthophoto; orthophotograph,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.15,GB/T 14950—2009,6.15,立体配对片,stereo-mate,,立体匹配片,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.16,GB/T 14950—2009,6.16,立体正射像片,orthophoto stereo-mate; stereo orthophoto,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.17,GB/T 14950—2009,6.17,像片平面图,photo plan,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.18,GB/T 14950—2009,6.18,固定比例尺像片平面图,fixed scale photo plan,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.19,GB/T 14950—2009,6.19,自由比例尺像片平面图,free scale photo plan,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.20,GB/T 14950—2009,6.20,影像地图,photo map,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.21,GB/T 14950—2009,6.21,正射影像图,orthophotoquad,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.22,GB/T 14950—2009,6.22,正射影像地图,orthophoto map,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.23,GB/T 14950—2009,6.23,立体影像地图,stereophoto map,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.24,GB/T 14950—2009,6.24,数字地图,digital map,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.25,GB/T 14950—2009,6.25,数字线划图,digital line graph; DLG,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.26,GB/T 14950—2009,6.26,数字正射影像图,digital orthophoto map; DOM,,,,42,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.27,GB/T 14950—2009,6.27,数字栅格地图,digital raster graphic; digital raster graph; DRG,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.28,GB/T 14950—2009,6.28,不规则三角网,triangular irregular network; TIN,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.29,GB/T 14950—2009,6.29,数字高程模型,digital elevation model; DEM,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.30,GB/T 14950—2009,6.30,数字地面模型,digital terrain model; DTM,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.31,GB/T 14950—2009,6.31,数字表面模型,digital surface model; DSM,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.32,GB/T 14950—2009,6.32,数字坡度模型,digital slope model,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.33,GB/T 14950—2009,6.33,数字位置模型,digital location model,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.34,GB/T 14950—2009,6.34,地形数据库,topographic database,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.35,GB/T 14950—2009,6.35,等值线图,isoline map,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.36,GB/T 14950—2009,6.36,轮廓线图,outline map,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.37,GB/T 14950—2009,6.37,剖面图,profile,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.38,GB/T 14950—2009,6.38,立面图,elevation view,,,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.39,GB/T 14950—2009,6.39,视频地图,video map,,可视地图,,43,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.40,GB/T 14950—2009,6.40,透视图,perspective view,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.41,GB/T 14950—2009,6.41,莫尔条纹图,Moire topograph,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.42,GB/T 14950—2009,6.42,地面像片,terrestrial photograph,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.43,GB/T 14950—2009,6.43,近景像片,close range photograph,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.44,GB/T 14950—2009,6.44,近红外影像,near infrared image,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.45,GB/T 14950—2009,6.45,热红外影像,thermal infrared image,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.46,GB/T 14950—2009,6.46,微波影像,microwave image,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.47,GB/T 14950—2009,6.47,雷达影像,radar image,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.48,GB/T 14950—2009,6.48,扫描影像,scan image,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.49,GB/T 14950—2009,6.49,多光谱合成影像,multispectral composite imagery,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.50,GB/T 14950—2009,6.50,多时相影像,multi-temporal image,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.51,GB/T 14950—2009,6.51,真彩色影像,ture color image,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.52,GB/T 14950—2009,6.52,伪彩色影像,pseudo-color image,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.53,GB/T 14950—2009,6.53,二值影像,binary image,,,,44,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.54,GB/T 14950—2009,6.54,比值影像,ratio image,,,,45,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.55,GB/T 14950—2009,6.55,差值影像,difference image,,,,45,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.56,GB/T 14950—2009,6.56,卫星影像,satellite image,,,,45,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.57,GB/T 14950—2009,6.57,恒星影像,fixed star image,,,,45,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.58,GB/T 14950—2009,6.58,假彩色像片,false colour photograph,,,,45,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.59,GB/T 14950—2009,6.59,卫星影像图,satellite image map,,,,45,source_text_and_glyph_layout_checked_pending_independent_visual
+GB-T-14950-2009:6.60,GB/T 14950—2009,6.60,全息图,hologram,,,,45,source_text_and_glyph_layout_checked_pending_independent_visual
