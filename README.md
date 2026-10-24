@@ -6,17 +6,25 @@
 ![Dependencies](https://img.shields.io/badge/dependencies-stdlib_only-4c6ef5)
 ![Dataset](https://img.shields.io/badge/terms-2%2C060-009688)
 
-**让术语准确，让论文更好读。**
 
-一篇中文学术论文，怎样才能写得清楚？句子流畅很重要，专业术语也一样重要。一个概念在摘要、方法和讨论中使用了不同译名，读者就需要反复确认：这些说的是同一件事吗？
+**为什么 LLM 生成的中文学术论文总缺乏“学术味”？**
 
-写作中的问题往往很具体：某个英文术语该怎么译？一个缩写需要怎样保持一致？同一个词在不同学科中，又应该选用哪种表达？
+通用大语言模型能写出流畅的中文，却很难直接写出符合国家标准的规范学术论文。常见的痛点包括：
 
-这正是 **academic-terminology-zh** 要帮助你解决的事。
+* **非标术语混用**：同一个专业概念在文中随处乱用近义词或非标表达，缺乏国标约束（如 GB 标准定名“总氮”，AI 却混用“全氮”；GB 标准定名“散射系数”，AI 却泛化为“散射率”）。
+* **直译硬套**：忽视学科国标规范，将英文专业 Term 机械地按字面直译，产生生硬的翻译腔。
+* **口语化与非学术化**：频繁使用日常口语或泛化表达，缺乏国家标准所要求的书面语体与学术严谨性。
 
-它是一个面向**中文学术论文起草、专业润色、英译中和术语一致性检查**的 [Agent Skill](https://agentskills.io/specification)。Agent 根据研究语境理解文本，按需查询本地专业词表，再将适合的术语融入正文。研究方法、概念、变量、公式、数值和结论保持原意。
+**核心矛盾在于**：学术写作需要**权威的 GB 国标规范约束**，而通用模型只有**概率性的词汇关联与泛化表达**。
 
-**目标很简单：让每个专业概念都有准确、自然、前后一致的表达。**
+`academic-terminology-zh` 是一款基于 GB 国标学术术语库的 [Agent Skill](https://agentskills.io/specification)。它将国家标准接入 Agent 写作 Pipeline，为 AI 补全权威学科基准：
+
+1. **GB 国标精准对齐**：基于 GB 国标术语库与上下文语境，自动匹配权威地道的中文学术表述。
+2. **全文一致性收敛**：以国标规范强制收敛全文术语，同时压制口语化倾向与生硬翻译腔。
+3. **无损事实保留**：在强化学术规范的同时，对研究方法、变量名、推导公式与数值结论进行无损保护。
+
+借助 GB 国标规范，告别“AI 味”、口语化与直译腔，让中文学术写作真正严谨、规范、地道。
+
 
 ## ⚡ What Can You Do With It?
 
@@ -55,7 +63,9 @@ statistics: 216
 
 使用 Codex？可以直接让它完成安装、复制词表和验证。将下面的 Prompt 交给 Codex：
 
-> 从 https://github.com/GeoGeekLab/academic-terminology-zh 安装 `academic-terminology-zh` 到当前项目。将 `.agents/skills/academic-terminology-zh/` 和 `data/gb_terminology_databases/` 放入项目对应目录；运行 `lookup.py --stats` 和单元测试，确认四个领域合计 2,060 条记录。
+```text
+从 https://github.com/GeoGeekLab/academic-terminology-zh 安装 `academic-terminology-zh` 到当前项目。将 `.agents/skills/academic-terminology-zh/` 和 `data/gb_terminology_databases/` 放入项目对应目录；运行 `lookup.py --stats` 和单元测试，确认四个领域合计 2,060 条记录。
+```
 
 ### 1-minute demo
 
@@ -202,4 +212,4 @@ GitHub Actions：Python **3.10 / 3.12**；单元测试、脚本编译、四领�
 
 ---
 
-**从准确的术语开始，让每一段学术表达都更清楚。**
+**“清水出芙蓉，天然去雕饰。” —— 李白**
