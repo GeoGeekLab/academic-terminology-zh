@@ -91,7 +91,7 @@ python .agents/skills/academic-terminology-zh/scripts/lookup.py --q "回归分�
 
 **Public index schema:** `id`, `zh`, `en`, `abbr`, `aliases_zh`, `aliases_en`, `standard`, `clause`, `physical_pdf_pages`, `verification`.
 
-公开索引聚焦术语及其来源信息。需要进一步查看完整定义时，可以使用 `--db` 加载另行获取的完整本地数据库。原始国标 PDF、定义全文与审校中间文件由各自来源单独管理。
+公开索引聚焦术语及其来源信息。需要进一步查看完整定义时，可以使用 `--db` 加载另行获取的完整本地数据库。原始国标 PDF、定义全文和审校中间文件不随公开索引发布。
 
 ## ⚙️ Architecture
 
