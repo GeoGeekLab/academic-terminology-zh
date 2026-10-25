@@ -1,0 +1,84 @@
+name: Publish GitHub Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/release.yml
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (e.g. v1.3.0)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate bundled skill and term indexes
+        run: |
+          python -m unittest discover -s .agents/skills/academic-terminology-zh/tests -v
+          python .agents/skills/academic-terminology-zh/scripts/lookup.py --stats --json > /tmp/terms.json
+          python -c "import json; x=json.load(open('/tmp/terms.json'))['counts']; assert x == {'artificial_intelligence':75,'oceanography':1175,'remote_sensing':594,'statistics':216}, x"
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT_NAME: ${{ github.event_name }}
+          REQUESTED_TAG: ${{ inputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$EVENT_NAME" == "push" ]]; then
+            TAG="v1.2.0"
+          else
+            TAG="$REQUESTED_TAG"
+          fi
+          if [[ ! "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$ ]]; then
+            echo "::error::Unsupported tag: $TAG"
+            exit 1
+          fi
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            echo "Release $TAG already exists."
+            exit 0
+          fi
+          if [[ "$TAG" == "v1.2.0" ]]; then
+            cat > /tmp/release-notes.md <<'NOTES'
+          ## Initial public release
+
+          A local-first Agent Skill for terminology-aware Chinese academic writing, including drafting, polishing, translation into Chinese, and terminology consistency review.
+
+          ### Included
+          - **2,060 searchable terms** in four GB/T-based indexes: oceanography (1,175), artificial intelligence (75), remote sensing (594), and statistics (216).
+          - **Skill entrypoint** at `.agents/skills/academic-terminology-zh/SKILL.md`.
+          - **Python standard-library CLI** with Chinese/English search, multi-domain filtering, structured JSON output, and source references.
+          - **Custom domain import** from CSV/JSONL with stable IDs, duplicate detection, and automatic domain discovery.
+          - **GitHub Actions** coverage on Python 3.10 and 3.12.
+
+          ### Quick start
+          ```bash
+          git clone https://github.com/GeoGeekLab/academic-terminology-zh.git
+          cd academic-terminology-zh
+          python .agents/skills/academic-terminology-zh/scripts/lookup.py --stats
+          ```
+
+          **Data scope:** The public indexes include term labels, aliases, standard/clause IDs, PDF page locators, and verification markers. Full definitions and original standards PDFs are not included. Academic-writing evaluation beyond unit tests remains future work.
+          NOTES
+            gh release create "$TAG" --target "$GITHUB_SHA" \
+              --title "$TAG · Initial public release" \
+              --notes-file /tmp/release-notes.md
+          else
+            gh release create "$TAG" --target "$GITHUB_SHA" \
+              --title "$TAG" --generate-notes
+          fi
