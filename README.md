@@ -8,7 +8,7 @@
 
 <!-- GeoGeekLab VIS: BEGIN -->
 <p align="center">
-  <a href="https://github.com/GeoGeekLab/geogeeklab-visual-identity/tree/main/new-mascots/academic-terminology-zh"><img src="https://raw.githubusercontent.com/GeoGeekLab/geogeeklab-visual-identity/main/new-mascots/academic-terminology-zh/concept-readme-hero.svg" alt="Ink Crane, the Academic Terminology mascot" width="740"></a>
+  <img src="https://raw.githubusercontent.com/GeoGeekLab/geogeeklab-visual-identity/main/readme-artwork/v3/academic-terminology-zh/readme-artwork.webp" alt="Ink Crane reviewing Chinese academic manuscripts" width="390">
 </p>
 <!-- GeoGeekLab VIS: END -->
 
