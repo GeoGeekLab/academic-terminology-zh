@@ -1,4 +1,4 @@
-# academic-terminology-zh
+# academic-terminology-zh:中文学术写作规范校正
 
 [![CI](https://github.com/GeoGeekLab/academic-terminology-zh/actions/workflows/tests.yml/badge.svg)](https://github.com/GeoGeekLab/academic-terminology-zh/actions/workflows/tests.yml)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-compatible-222222)](https://agentskills.io/specification)
@@ -7,24 +7,17 @@
 ![Dataset](https://img.shields.io/badge/terms-2%2C060-009688)
 
 
-**为什么 LLM 生成的中文学术论文总缺乏“学术味”？**
+## 解决什么问题？
 
-通用大语言模型能写出流畅的中文，却很难直接写出符合国家标准的规范学术论文。常见的痛点包括：
+通用大语言模型生成的中文论文常存在用词不规范、英文机械直译以及语言口语化等问题，难以达到学术出版的要求。
 
-* **非标术语混用**：同一个专业概念在文中随处乱用近义词或非标表达，缺乏国标约束（如 GB 标准定名“总氮”，AI 却混用“全氮”；GB 标准定名“散射系数”，AI 却泛化为“散射率”）。
-* **直译硬套**：忽视学科国标规范，将英文专业 Term 机械地按字面直译，产生生硬的翻译腔。
-* **口语化与非学术化**：频繁使用日常口语或泛化表达，缺乏国家标准所要求的书面语体与学术严谨性。
+## 核心功能与优势
 
-**核心矛盾在于**：学术写作需要**权威的 GB 国标规范约束**，而通用模型只有**概率性的词汇关联与泛化表达**。
+`academic-terminology-zh` 是一款基于 GB 国标学术术语库的 [Agent Skill](https://agentskills.io/specification)。它为模型提供明确的学术表达基准：
 
-`academic-terminology-zh` 是一款基于 GB 国标学术术语库的 [Agent Skill](https://agentskills.io/specification)。它将国家标准接入 Agent 写作 Pipeline，为 AI 补全权威学科基准：
-
-1. **GB 国标精准对齐**：基于 GB 国标术语库与上下文语境，自动匹配权威地道的中文学术表述。
-2. **全文一致性收敛**：以国标规范强制收敛全文术语，同时压制口语化倾向与生硬翻译腔。
-3. **无损事实保留**：在强化学术规范的同时，对研究方法、变量名、推导公式与数值结论进行无损保护。
-
-借助 GB 国标规范，告别“AI 味”、口语化与直译腔，让中文学术写作真正严谨、规范、地道。
-
+- **术语标准化**：根据上下文将非标词汇自动修正为国家标准定名。
+- **语体学术化**：压制口语与直译腔调，统一全文专业用语。
+- **数据无损**：仅优化文字表达，不改变变量、公式、数据与研究结论。
 
 ## ⚡ What Can You Do With It?
 
