@@ -6,6 +6,12 @@
 ![Dependencies](https://img.shields.io/badge/dependencies-stdlib_only-4c6ef5)
 ![Dataset](https://img.shields.io/badge/terms-2%2C060-009688)
 
+<!-- GeoGeekLab VIS: BEGIN -->
+<p align="center">
+  <a href="https://github.com/GeoGeekLab/geogeeklab-visual-identity/tree/main/new-mascots/academic-terminology-zh"><img src="https://raw.githubusercontent.com/GeoGeekLab/geogeeklab-visual-identity/main/new-mascots/academic-terminology-zh/concept-readme-hero.svg" alt="Ink Crane, the Academic Terminology mascot" width="740"></a>
+</p>
+<!-- GeoGeekLab VIS: END -->
+
 
 ## 解决什么问题？
 
