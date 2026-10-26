@@ -28,7 +28,7 @@ clause, PDF page, and a review-status field. Original PDF files and full
 definitions are not shipped. Some review-status labels explicitly state that
 verification was not independent or did not cover the full entry.
 
-**Status: redistribution rights NOT VERIFIED.** The existence of a public
+**Status: redistribution rights NOT VERIFIED.** The machine-readable inventory is [data/rights_manifest.json](data/rights_manifest.json). Run `python scripts/audit_rights.py` to verify record counts and source coverage. Run `python scripts/audit_rights.py --require-clearance` to enforce the release gate. The existence of a public
 national standard is not evidence that redistribution of a derived index is
 permitted. The repository's MIT LICENSE does not cure this issue. The
 maintainers have not published written permission, a definitive legal opinion,

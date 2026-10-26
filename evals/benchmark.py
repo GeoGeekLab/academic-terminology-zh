@@ -36,7 +36,7 @@ def validate_cases(cases: list[dict]) -> None:
         if not isinstance(cid, str) or not cid or cid in seen:
             raise ValueError(f"missing or duplicate case id: {cid!r}")
         seen.add(cid)
-        for field in ("source_title", "source_url", "doi", "excerpt", "prompt", "license_url"):
+        for field in ("authors", "modifications", "source_title", "source_url", "doi", "excerpt", "prompt", "license_url"):
             if not isinstance(case.get(field), str) or not case[field].strip():
                 raise ValueError(f"{cid}: missing {field}")
         if not case["source_url"].startswith("https://"):

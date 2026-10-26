@@ -34,3 +34,5 @@ jobs:
       - name: Compile integration scripts
         run: |
           python -m py_compile evals/benchmark.py integrations/install.py .agents/skills/academic-terminology-zh/scripts/handoff.py
+      - name: Audit standards source inventory and release rights
+        run: python scripts/audit_rights.py

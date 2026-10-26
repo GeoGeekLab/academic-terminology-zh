@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "last_inventory_date": "2026-10-26",
+  "explanatory_note": "Engineering inventory only. 'uncleared' is NOT a conclusion that reuse is prohibited or permitted.",
+  "source_terms_folder": "data/gb_terminology_databases",
+  "legal_guidance": "DATA_RIGHTS.md",
+  "sources": [
+    {
+      "domain": "oceanography",
+      "standard": "GB/T 15919—2010",
+      "records": 486,
+      "redistribution_status": "uncleared",
+      "rights_holder_verified": false,
+      "permission_document_url": null,
+      "counsel_reviewed": false,
+      "notes": "No documentary grant or legal clearance recorded."
+    },
+    {
+      "domain": "oceanography",
+      "standard": "GB/T 15920—2010",
+      "records": 502,
+      "redistribution_status": "uncleared",
+      "rights_holder_verified": false,
+      "permission_document_url": null,
+      "counsel_reviewed": false,
+      "notes": "No documentary grant or legal clearance recorded."
+    },
+    {
+      "domain": "oceanography",
+      "standard": "GB/T 15921—2010",
+      "records": 187,
+      "redistribution_status": "uncleared",
+      "rights_holder_verified": false,
+      "permission_document_url": null,
+      "counsel_reviewed": false,
+      "notes": "No documentary grant or legal clearance recorded."
+    },
+    {
+      "domain": "artificial_intelligence",
+      "standard": "GB/T 41867—2022",
+      "records": 75,
+      "redistribution_status": "uncleared",
+      "rights_holder_verified": false,
+      "permission_document_url": null,
+      "counsel_reviewed": false,
+      "notes": "No documentary grant or legal clearance recorded."
+    },
+    {
+      "domain": "remote_sensing",
+      "standard": "GB/T 36299—2018",
+      "records": 85,
+      "redistribution_status": "uncleared",
+      "rights_holder_verified": false,
+      "permission_document_url": null,
+      "counsel_reviewed": false,
+      "notes": "No documentary grant or legal clearance recorded."
+    },
+    {
+      "domain": "remote_sensing",
+      "standard": "GB/T 14950—2009",
+      "records": 509,
+      "redistribution_status": "uncleared",
+      "rights_holder_verified": false,
+      "permission_document_url": null,
+      "counsel_reviewed": false,
+      "notes": "No documentary grant or legal clearance recorded."
+    },
+    {
+      "domain": "statistics",
+      "standard": "GB/T 3358.3—2009",
+      "records": 78,
+      "redistribution_status": "uncleared",
+      "rights_holder_verified": false,
+      "permission_document_url": null,
+      "counsel_reviewed": false,
+      "notes": "No documentary grant or legal clearance recorded."
+    },
+    {
+      "domain": "statistics",
+      "standard": "GB/T 3358.1—2009",
+      "records": 138,
+      "redistribution_status": "uncleared",
+      "rights_holder_verified": false,
+      "permission_document_url": null,
+      "counsel_reviewed": false,
+      "notes": "No documentary grant or legal clearance recorded."
+    }
+  ]
+}
