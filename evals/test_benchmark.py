@@ -13,11 +13,14 @@ SPEC.loader.exec_module(benchmark)
 
 def example_case(cid="paper-a"):
     return {
-        "id": cid, "task": "translate_en_zh", "source_title": "paper", "source_url": "https://example.org/paper",
+        "id": cid, "source_title": "paper", "source_url": "https://example.org/paper",
         "doi": "10.1/example", "authors": "Example Researcher", "modifications": "Constructed",
         "excerpt": "Machine learning 10 km", "prompt": "Review the text",
         "input_text": "构造的术语审校样本。", "case_type": "paper_grounded_synthetic_challenge",
-        "task": "terminology_audit_zh", "expected_checks": ["区分术语及科研事实"],
+        "task": "cross_standard_radiometry", "expected_checks": ["国标定名核查"],
+        "domain": ["artificial_intelligence"],
+        "index_evidence": [{"domain": "artificial_intelligence", "zh": "机器学习",
+                            "en": "machine learning", "standard": "GB/T 41867—2022", "clause": "3.2.10"}],
         "human_review_required": True,
         "license": "CC BY 4.0", "license_url": "https://creativecommons.org/licenses/by/4.0/",
         "concepts": [{"id": "ml", "accepted": ["机器学习"], "in_index": True}],
@@ -29,12 +32,24 @@ class BenchmarkTests(unittest.TestCase):
     def test_real_cases_schema(self):
         rows = benchmark.read_jsonl(benchmark.DEFAULT_CASES)
         benchmark.validate_cases(rows)
+        verified = benchmark.verify_index_evidence(rows)
+        self.assertEqual(verified["index_evidence_records_checked"], 23)
         self.assertGreaterEqual(len(rows), 5)
         self.assertFalse(any(c["gold_reviewed"] for c in rows))
         self.assertEqual(len(rows), 6)
         self.assertEqual(len({c["task"] for c in rows}), 6)
         self.assertTrue(all(c["case_type"] == "paper_grounded_synthetic_challenge" for c in rows))
         self.assertTrue(all("非原论文原文" in c["input_text"] or "非论文原文" in c["input_text"] for c in rows))
+
+    def test_reject_fabricated_standard_clause(self):
+        case = example_case()
+        case["index_evidence"][0]["clause"] = "9.99.99"
+        with self.assertRaisesRegex(ValueError, "entry not found"):
+            benchmark.verify_index_evidence([case])
+
+    def test_verified_sample_clause(self):
+        result = benchmark.verify_index_evidence([example_case()])
+        self.assertEqual(result["index_evidence_records_checked"], 1)
 
     def test_paired_coverage_and_retention(self):
         cases = [example_case()]

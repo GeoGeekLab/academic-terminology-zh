@@ -219,7 +219,7 @@ GitHub Actions：Python **3.10 / 3.12**；单元测试、脚本编译、四领�
 - **Rights boundary**: original project code/documentation are MIT; third-party
   GB/T-derived data are excluded. Read [DATA_RIGHTS.md](DATA_RIGHTS.md)
   before repackaging any dataset.
-- **Paper-grounded paired benchmark**: six constructed, high-difficulty Chinese editorial tasks linked to real CC BY 4.0 papers. These scenarios are not quotations from those papers. Paired baseline/Skill outputs and mechanical diagnostics are supported; expert rubric labels remain provisional. Read [evals/README.md](evals/README.md).
+- **GB/T terminology A/B benchmark**: six constructed Chinese terminology-only cases linked to real papers as background. Each tests canonical term names, English mappings, exact GB/T citations, alias handling and missing-index boundaries. No claims about general scientific-method review or measured model gains; expert labels remain provisional. Read [evals/README.md](evals/README.md).
 - **Research Agent integration**: install for Codex, Claude Code or OpenCode
   and use a read-only terminology JSON handoff with existing writing Skills.
   See [integrations/README.md](integrations/README.md).

@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import sys
 import unicodedata
 from pathlib import Path
 
 DEFAULT_CASES = Path(__file__).with_name("real_papers.jsonl")
+DEFAULT_INDEX = Path(__file__).resolve().parents[1] / "data/gb_terminology_databases"
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -44,9 +46,9 @@ def validate_cases(cases: list[dict]) -> None:
         if case.get("license") != "CC BY 4.0" or case["license_url"] != "https://creativecommons.org/licenses/by/4.0/":
             raise ValueError(f"{cid}: license needs individual source review")
         allowed_tasks = {
-            "terminology_audit_zh", "methodology_integrity_zh",
-            "mechanism_consistency_zh", "statistical_scope_zh",
-            "document_consistency_zh", "metric_integrity_zh",
+            "cross_standard_radiometry", "remote_sensing_processing_terms",
+            "oceanographic_terms", "statistics_intervals",
+            "resolution_terms", "ai_terms_and_aliases",
         }
         if case.get("task") not in allowed_tasks:
             raise ValueError(f"{cid}: unsupported task")
@@ -77,9 +79,48 @@ def validate_cases(cases: list[dict]) -> None:
                 raise ValueError(f"{cid}: invalid accepted terminology")
             if not isinstance(concept.get("in_index"), bool):
                 raise ValueError(f"{cid}: in_index must be a boolean")
+        if not isinstance(case.get("index_evidence"), list) or not case["index_evidence"]:
+            raise ValueError(f"{cid}: standard index evidence required")
+        evidence_seen = set()
+        for evidence in case["index_evidence"]:
+            if not isinstance(evidence, dict):
+                raise ValueError(f"{cid}: evidence must be object")
+            required = ("domain", "zh", "en", "standard", "clause")
+            if not all(isinstance(evidence.get(field), str) and evidence[field].strip() for field in required):
+                raise ValueError(f"{cid}: incomplete GB/T evidence")
+            identity = tuple(evidence[field] for field in required)
+            if identity in evidence_seen:
+                raise ValueError(f"{cid}: duplicate index evidence")
+            evidence_seen.add(identity)
+            if evidence["domain"] not in case.get("domain", []):
+                raise ValueError(f"{cid}: evidence domain not listed in case")
         literals = case.get("protected_literals")
         if not isinstance(literals, list) or not all(isinstance(x, str) and x for x in literals):
             raise ValueError(f"{cid}: protected_literals must be strings")
+
+
+def verify_index_evidence(cases: list[dict], index_root: Path = DEFAULT_INDEX) -> dict:
+    """Verify every asserted standard+clause+name against the committed CSV index.
+
+    This verifies internal consistency, not the source standards' legal status
+    or independent accuracy.
+    """
+    rows = set()
+    for file in sorted(index_root.glob("*/indexes/terms.csv")):
+        with file.open(encoding="utf-8-sig", newline="") as stream:
+            for row in csv.DictReader(stream):
+                rows.add((file.parent.parent.name, row.get("zh", ""), row.get("en", ""),
+                          row.get("standard", ""), row.get("clause", "")))
+    if not rows:
+        raise ValueError(f"no GB/T index files under {index_root}")
+    count = 0
+    for case in cases:
+        for evidence in case["index_evidence"]:
+            key = tuple(evidence[field] for field in ("domain", "zh", "en", "standard", "clause"))
+            if key not in rows:
+                raise ValueError(f"{case['id']}: GB/T index entry not found: {key!r}")
+            count += 1
+    return {"index_evidence_records_checked": count, "validation_scope": "committed term-index references only"}
 
 
 def normalize(value: str) -> str:
@@ -151,7 +192,7 @@ def compare(cases: list[dict], paired_outputs: list[dict]) -> dict:
         "per_case": details,
         "limitations": [
             "These scores measure annotated phrase coverage and literal retention, not semantic correctness.",
-            "Human assessment of expected_checks is the primary endpoint for these six difficult tasks.",
+            "Expert scoring of Chinese/English standard terms, GB/T clause accuracy, standard aliases and missing-index claims is primary.",
             "Constructed input_text is not quoted from, or alleged to be an error in, its linked paper.",
             "Substring matching can yield false positives, and accepted variants require expert review.",
             "The gold_reviewed flag must be true before results can support scientific quality claims.",
@@ -175,9 +216,11 @@ def main(argv: list[str] | None = None) -> int:
     try:
         cases = read_jsonl(args.cases)
         validate_cases(cases)
+        provenance = verify_index_evidence(cases)
         if args.command == "validate":
             print(json.dumps({"valid": True, "cases": len(cases),
-                              "gold_reviewed": sum(c["gold_reviewed"] for c in cases)}, ensure_ascii=False))
+                              "gold_reviewed": sum(c["gold_reviewed"] for c in cases),
+                              **provenance}, ensure_ascii=False))
         elif args.command == "template":
             if args.out.exists():
                 raise ValueError(f"refusing to overwrite: {args.out}")
