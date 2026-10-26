@@ -5,3 +5,6 @@ __pycache__/
 .DS_Store
 sources/new_domain/
 data/gb_terminology_databases.zip
+
+# Local benchmark model outputs (may contain private manuscript material)
+results/

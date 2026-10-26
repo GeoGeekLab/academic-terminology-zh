@@ -23,3 +23,13 @@ python .agents/skills/academic-terminology-zh/scripts/lookup.py --q "回归分�
 可通过 `--db` 或 `GB_TERMINOLOGY_DB_ROOT` 指向本地数据库 ZIP/目录。新增领域位于 `custom_terms/<domain>/indexes/terms.csv`，无需修改脚本。见 `references/usage.md`。
 
 正常写作不修改底层数据。扩展术语库时使用 `scripts/import_terms.py`；若来源是 PDF，应先核对并整理为 CSV/JSONL。
+
+
+## Research-writing workflow integration
+
+When another academic-writing Skill requests terminology support, use
+scripts/handoff.py via stdin or --input. It emits read-only JSON mentions
+with standard/clause and verification labels. Inspect labels and context;
+do not mechanically replace aliases or override disciplinary conventions.
+The host writing Skill remains responsible for editing text and verifying
+facts. Integration/install instructions: repository integrations/README.md.
