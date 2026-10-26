@@ -207,8 +207,31 @@ GitHub Actions：Python **3.10 / 3.12**；单元测试、脚本编译、四领�
 
 提交前请运行上述测试，并为新增词表记录清晰的来源信息。这有助于其他研究者理解和复用术语。
 
-仓库目前尚未发布 `LICENSE` 文件。源码使用权限以仓库后续公布的许可条款为准。
+**代码及原创文档：MIT License。** 公开的 GB/T 术语索引不随 MIT 一起授权，索引的再分发权利仍待审核。详情见 [DATA_RIGHTS.md](DATA_RIGHTS.md)。
 
 ---
 
 **“清水出芙蓉，天然去雕饰。” —— 李白**
+
+
+## 🔎 Evidence, licensing, and research-workflow integration (v1.3 draft)
+
+- **Rights boundary**: original project code/documentation are MIT; third-party
+  GB/T-derived data are excluded. Read [DATA_RIGHTS.md](DATA_RIGHTS.md)
+  before repackaging any dataset.
+- **GB/T terminology A/B benchmark**: six constructed Chinese terminology-only cases linked to real papers as background. Each tests canonical term names, English mappings, exact GB/T citations, alias handling and missing-index boundaries. No claims about general scientific-method review or measured model gains; expert labels remain provisional. Read [evals/README.md](evals/README.md).
+- **Research Agent integration**: install for Codex, Claude Code or OpenCode
+  and use a read-only terminology JSON handoff with existing writing Skills.
+  See [integrations/README.md](integrations/README.md).
+
+Validate the benchmark:
+
+```bash
+python evals/benchmark.py validate
+python evals/benchmark.py template --out results/paired.jsonl
+# Fill both arms with genuine outputs before comparing.
+python evals/benchmark.py compare --outputs results/paired.jsonl
+```
+
+Do not claim the Skill improves correctness until paired model runs and
+independent domain-expert review have been completed.

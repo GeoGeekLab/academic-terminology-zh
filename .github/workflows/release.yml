@@ -1,11 +1,6 @@
 name: Publish GitHub Release
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/release.yml
   workflow_dispatch:
     inputs:
       tag:
@@ -32,6 +27,8 @@ jobs:
           python .agents/skills/academic-terminology-zh/scripts/lookup.py --stats --json > /tmp/terms.json
           python -c "import json; x=json.load(open('/tmp/terms.json'))['counts']; assert x == {'artificial_intelligence':75,'oceanography':1175,'remote_sensing':594,'statistics':216}, x"
 
+      - name: Require documented redistribution clearance before publishing source release
+        run: python scripts/audit_rights.py --require-clearance
       - name: Create release
         env:
           GH_TOKEN: ${{ github.token }}

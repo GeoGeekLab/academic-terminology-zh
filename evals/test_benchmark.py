@@ -1,0 +1,84 @@
+"""Unit tests use synthetic outputs only. They are not real model performance."""
+import importlib.util
+import json
+import tempfile
+import unittest
+from pathlib import Path
+
+MODULE_PATH = Path(__file__).with_name("benchmark.py")
+SPEC = importlib.util.spec_from_file_location("term_benchmark", MODULE_PATH)
+benchmark = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(benchmark)
+
+
+def example_case(cid="paper-a"):
+    return {
+        "id": cid, "source_title": "paper", "source_url": "https://example.org/paper",
+        "doi": "10.1/example", "authors": "Example Researcher", "modifications": "Constructed",
+        "excerpt": "Machine learning 10 km", "prompt": "Review the text",
+        "input_text": "构造的术语审校样本。", "case_type": "paper_grounded_synthetic_challenge",
+        "task": "cross_standard_radiometry", "expected_checks": ["国标定名核查"],
+        "domain": ["artificial_intelligence"],
+        "index_evidence": [{"domain": "artificial_intelligence", "zh": "机器学习",
+                            "en": "machine learning", "standard": "GB/T 41867—2022", "clause": "3.2.10"}],
+        "human_review_required": True,
+        "license": "CC BY 4.0", "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "concepts": [{"id": "ml", "accepted": ["机器学习"], "in_index": True}],
+        "protected_literals": ["10", "km"], "gold_reviewed": False,
+    }
+
+
+class BenchmarkTests(unittest.TestCase):
+    def test_real_cases_schema(self):
+        rows = benchmark.read_jsonl(benchmark.DEFAULT_CASES)
+        benchmark.validate_cases(rows)
+        verified = benchmark.verify_index_evidence(rows)
+        self.assertEqual(verified["index_evidence_records_checked"], 23)
+        self.assertGreaterEqual(len(rows), 5)
+        self.assertFalse(any(c["gold_reviewed"] for c in rows))
+        self.assertEqual(len(rows), 6)
+        self.assertEqual(len({c["task"] for c in rows}), 6)
+        self.assertTrue(all(c["case_type"] == "paper_grounded_synthetic_challenge" for c in rows))
+        self.assertTrue(all("非原论文原文" in c["input_text"] or "非论文原文" in c["input_text"] for c in rows))
+
+    def test_reject_fabricated_standard_clause(self):
+        case = example_case()
+        case["index_evidence"][0]["clause"] = "9.99.99"
+        with self.assertRaisesRegex(ValueError, "entry not found"):
+            benchmark.verify_index_evidence([case])
+
+    def test_verified_sample_clause(self):
+        result = benchmark.verify_index_evidence([example_case()])
+        self.assertEqual(result["index_evidence_records_checked"], 1)
+
+    def test_paired_coverage_and_retention(self):
+        cases = [example_case()]
+        rows = [{"id": "paper-a", "baseline": "机器学习 10", "skill": "机器学习 10 km"}]
+        report = benchmark.compare(cases, rows)
+        self.assertEqual(report["metrics"]["baseline"]["concept_coverage_pct"], 100)
+        self.assertEqual(report["metrics"]["baseline"]["protected_literal_recall_pct"], 50)
+        self.assertEqual(report["metrics"]["skill"]["protected_literal_recall_pct"], 100)
+        self.assertEqual(report["skill_minus_baseline_concept_pp"], 0)
+        self.assertEqual(report["gold_reviewed_count"], 0)
+
+    def test_missing_output_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "pair.jsonl"
+            path.write_text(json.dumps({"id": "paper-a", "baseline": "ok", "skill": ""}) + "\n")
+            with self.assertRaisesRegex(ValueError, "empty"):
+                benchmark.load_pairs([example_case()], path)
+
+    def test_duplicate_id_rejected(self):
+        with self.assertRaisesRegex(ValueError, "duplicate"):
+            benchmark.validate_cases([example_case(), example_case()])
+
+    def test_missing_case_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "pair.jsonl"
+            path.write_text(json.dumps({"id": "paper-a", "baseline": "ok", "skill": "ok"}) + "\n")
+            with self.assertRaisesRegex(ValueError, "missing outputs"):
+                benchmark.load_pairs([example_case(), example_case("paper-b")], path)
+
+
+if __name__ == "__main__":
+    unittest.main()

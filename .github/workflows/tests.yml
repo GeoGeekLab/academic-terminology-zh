@@ -24,3 +24,15 @@ jobs:
         run: |
           python -m py_compile .agents/skills/academic-terminology-zh/scripts/lookup.py
           python -m py_compile .agents/skills/academic-terminology-zh/scripts/import_terms.py
+
+      - name: Validate licensed research benchmark
+        run: python evals/benchmark.py validate
+      - name: Run benchmark and installer unit tests
+        run: |
+          python -m unittest discover -s evals -v
+          python -m unittest discover -s integrations -v
+      - name: Compile integration scripts
+        run: |
+          python -m py_compile evals/benchmark.py integrations/install.py .agents/skills/academic-terminology-zh/scripts/handoff.py
+      - name: Audit standards source inventory and release rights
+        run: python scripts/audit_rights.py
