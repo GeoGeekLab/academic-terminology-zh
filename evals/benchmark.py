@@ -43,8 +43,23 @@ def validate_cases(cases: list[dict]) -> None:
             raise ValueError(f"{cid}: source must use HTTPS")
         if case.get("license") != "CC BY 4.0" or case["license_url"] != "https://creativecommons.org/licenses/by/4.0/":
             raise ValueError(f"{cid}: license needs individual source review")
-        if case.get("task") != "translate_en_zh":
+        allowed_tasks = {
+            "terminology_audit_zh", "methodology_integrity_zh",
+            "mechanism_consistency_zh", "statistical_scope_zh",
+            "document_consistency_zh", "metric_integrity_zh",
+        }
+        if case.get("task") not in allowed_tasks:
             raise ValueError(f"{cid}: unsupported task")
+        if case.get("case_type") != "paper_grounded_synthetic_challenge":
+            raise ValueError(f"{cid}: the scenario must be explicitly identified as constructed")
+        if not isinstance(case.get("input_text"), str) or not case["input_text"].strip():
+            raise ValueError(f"{cid}: missing constructed input_text")
+        if not isinstance(case.get("expected_checks"), list) or not case["expected_checks"] or not all(
+            isinstance(check, str) and check.strip() for check in case["expected_checks"]
+        ):
+            raise ValueError(f"{cid}: expected_checks must be nonempty")
+        if case.get("human_review_required") is not True:
+            raise ValueError(f"{cid}: human review is required")
         if not isinstance(case.get("gold_reviewed"), bool):
             raise ValueError(f"{cid}: explicit gold_reviewed is required")
         concepts = case.get("concepts")
@@ -108,7 +123,8 @@ def compare(cases: list[dict], paired_outputs: list[dict]) -> dict:
     details = []
     for case in cases:
         output = by_id[case["id"]]
-        result = {"id": case["id"], "gold_reviewed": case["gold_reviewed"]}
+        result = {"id": case["id"], "task": case["task"], "gold_reviewed": case["gold_reviewed"],
+                  "human_review_required": True, "expert_checks": case["expected_checks"]}
         for arm in ("baseline", "skill"):
             outcome = score_one(case, output[arm])
             result[arm] = outcome
@@ -129,11 +145,14 @@ def compare(cases: list[dict], paired_outputs: list[dict]) -> dict:
     return {
         "case_count": len(cases),
         "gold_reviewed_count": sum(c["gold_reviewed"] for c in cases),
+        "benchmark_type": "paper-grounded constructed Chinese review tasks, not verbatim paper flaws",
         "metrics": counts,
         "skill_minus_baseline_concept_pp": round(skill - base, 2) if base is not None and skill is not None else None,
         "per_case": details,
         "limitations": [
             "These scores measure annotated phrase coverage and literal retention, not semantic correctness.",
+            "Human assessment of expected_checks is the primary endpoint for these six difficult tasks.",
+            "Constructed input_text is not quoted from, or alleged to be an error in, its linked paper.",
             "Substring matching can yield false positives, and accepted variants require expert review.",
             "The gold_reviewed flag must be true before results can support scientific quality claims.",
             "Use the same model, prompt policy and decoding settings for both arms; blind-review factual accuracy.",
@@ -165,7 +184,12 @@ def main(argv: list[str] | None = None) -> int:
             args.out.parent.mkdir(parents=True, exist_ok=True)
             with args.out.open("w", encoding="utf-8") as file:
                 for case in cases:
-                    file.write(json.dumps({"id": case["id"], "baseline": "", "skill": ""}, ensure_ascii=False) + "\n")
+                    file.write(json.dumps({
+                        "id": case["id"],
+                        "task": case["task"],
+                        "task_prompt": case["prompt"] + "\n\n" + case["input_text"],
+                        "baseline": "", "skill": ""
+                    }, ensure_ascii=False) + "\n")
             print(f"wrote paired input template: {args.out}")
         else:
             report = compare(cases, load_pairs(cases, args.outputs))

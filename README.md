@@ -219,10 +219,7 @@ GitHub Actions：Python **3.10 / 3.12**；单元测试、脚本编译、四领�
 - **Rights boundary**: original project code/documentation are MIT; third-party
   GB/T-derived data are excluded. Read [DATA_RIGHTS.md](DATA_RIGHTS.md)
   before repackaging any dataset.
-- **Real-paper paired benchmark**: six short CC BY 4.0 research excerpts,
-  source attribution, paired baseline/Skill outputs, and mechanical concept
-  coverage plus numeric/acronym retention metrics. Gold annotations remain
-  provisional. Read [evals/README.md](evals/README.md).
+- **Paper-grounded paired benchmark**: six constructed, high-difficulty Chinese editorial tasks linked to real CC BY 4.0 papers. These scenarios are not quotations from those papers. Paired baseline/Skill outputs and mechanical diagnostics are supported; expert rubric labels remain provisional. Read [evals/README.md](evals/README.md).
 - **Research Agent integration**: install for Codex, Claude Code or OpenCode
   and use a read-only terminology JSON handoff with existing writing Skills.
   See [integrations/README.md](integrations/README.md).

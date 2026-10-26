@@ -1,70 +1,75 @@
-# Paired evaluation on real, licensed research excerpts (v1.3)
+# v1.3: six paper-grounded, high-difficulty Chinese terminology review cases
 
-This benchmark uses **genuine short English excerpts** from six independently
-published CC BY 4.0 papers. Metadata includes source URLs, DOIs, and licenses.
-These are real-paper translation tasks, **not** a claim of evaluation on full
-Chinese manuscripts. Chinese academic polishing requires independently
-licensed Chinese text, or material supplied with permission; do not scrape
-copyrighted papers to expand the dataset.
+**Source vs test input must not be confused.** Each record references one
+real, attributed CC BY 4.0 research article, and retains a short *verbatim*
+English excerpt under `excerpt`. The actual A/B task is the independently
+**constructed Chinese editorial scenario** in `input_text`. These deliberately
+injected issues **must not be attributed to the paper's authors or presented
+as quotations from their papers**.
 
-## Design: a controlled, paired experiment
+Six different skills are tested:
 
-1. Fix the model version, decoding settings, and evaluation samples.
-2. **Baseline:** start a clean model session without this Skill. Give the
-   paper excerpt and its exact prompt. Save the response verbatim.
-3. **Skill:** start another clean session with academic-terminology-zh loaded
-   and with the same prompt/settings. Confirm lookup is usable. Save response.
-4. Blind human reviewers to which arm produced each response. Have a
-   domain expert check terminology choice, meaning preservation, factual
-   alterations, correct formulae/numbers and style. Record reviewer IDs,
-   errors and disagreements; resolve disagreements independently.
-5. Use the comparison script to compute transparent mechanical proxy metrics.
-   Publish the qualitative review separately. Do not call the proxy "accuracy."
+| Case | Article's subject | Constructed editorial challenge |
+| --- | --- | --- |
+| challenge-01-radiometry | Remote-sensing water quality | Spectral radiance, irradiance and reflectance; bilingual mismatch |
+| challenge-02-gamma-test-leakage | Deep-learning image enhancement | Synthetic low-light imagery, test-set tuning and unsupported generalization |
+| challenge-03-density-transport | Subtropical nutrient relay | Lateral transport along density surfaces vs vertical mixing, 10–100 km |
+| challenge-04-inference-interval | Cross-prediction inference | Population confidence interval vs individual prediction interval |
+| challenge-05-lulc-document | Time-series LULC mapping | Preserve land-cover-only vs compound LULC labels across document sections |
+| challenge-06-metrics-pairs | MARS-Net building extraction | IoU/F1 figures and dataset pairing, no false accuracy/generalization claim |
 
-## Commands
+A conventional LLM may answer all six correctly. The task is to *measure*
+whether the indexed Skill improves performance, not to create a deliberately
+weak baseline. Cases 05 and 06 include out-of-index terminology, so the
+Skill must neither hallucinate GB/T provenance nor force unsupported terms.
 
-Run in the repository root.
+## Reproduce the controlled A/B experiment
 
-    python evals/benchmark.py validate
-    python evals/benchmark.py template --out results/paired.jsonl
+1. Freeze a model name/version, runtime, sampling temperature, token budget,
+   tool policy and system prompts. Register experiment metadata separately.
+2. Run the same `task_prompt` in a clean **baseline** session without the
+   Skill or term index.
+3. Run the same `task_prompt` in a separate clean **Skill** session with
+   academic-terminology-zh enabled. Capture actual tool/lookup logs.
+4. Capture the two outputs *verbatim* and retain execution trace identifiers.
+5. Ask at least two independent domain reviewers, blinded to treatment, to
+   evaluate each item in `expected_checks` and record unsupported alterations,
+   inappropriate standard claims, numbers, and unchanged-but-correct answers.
+6. Compute proxy metrics and then report the pre-registered **human pass rates**
+   with uncertainty. If outputs tie, report a tie. If the Skill is worse, report
+   that result. Do not select only winning examples.
 
-Fill baseline and skill with actual model text for each record. Then run:
+The benchmark does **not** run a language model; it validates inputs,
+generates a paired response template, and scores simple string proxies.
 
-    python evals/benchmark.py compare --outputs results/paired.jsonl --out results/report.json
+From the repository root:
 
-Do not put private manuscripts or non-public model outputs in the repository.
-The project gitignore should keep results/ out of version control.
+```bash
+python evals/benchmark.py validate
+python evals/benchmark.py template --out results/paired.jsonl
+# The "task_prompt" field contains the identical input for both arms.
+# Save genuine baseline/Skill responses in each row (never fabricated examples).
+python evals/benchmark.py compare --outputs results/paired.jsonl --out results/report.json
+```
 
-## Evaluation schema
+The `results/` folder is ignored by Git; it may contain confidential drafts.
+Do not commit any non-public manuscript, model log, or unlicensed excerpt.
 
-Each line in real_papers.jsonl has: id, source title/URL, DOI, CC BY license,
-excerpt, prompt, domain, concepts with multiple acceptable Chinese variants,
-protected_literals, and gold_reviewed. As of this draft, all gold annotations
-are *provisional* (gold_reviewed=false). They require independent review before
-publication of performance claims.
+## Evaluation scope
 
-Both arms receive exactly the same input task; only availability of the Skill
-changes. Keep system prompts, context budget and model settings consistent.
-If a model cannot use tools, treat it as a different experiment.
+- **Primary outcome:** expert-reviewed pass/fail or rubric score for each
+  `expected_checks` criterion. The repo does not currently automate this.
+- **Secondary diagnostics:** concept phrase coverage, numeric/acronym literal
+  retention, cross-case comparison. These diagnostics use substring matching.
+  A semantically *incorrect* sentence can score 100%; this is *not* accuracy.
+- **Source provenance:** source paper, DOI, authors and CC BY 4.0 source link.
+  Article facts are referenced only where independently verified.
+- **Legal distinction:** the cited English excerpts are CC BY 4.0; the
+  created Chinese challenge inputs are **not** quotations or revisions from
+  those papers. All six gold labels remain `gold_reviewed=false`.
+- **Accuracy limitation:** only six scenarios, unbalanced difficulty; do not
+  claim population-level accuracy, statistical significance, or a universal
+  benefit until a larger independently reviewed sample and repeated model
+  runs have been completed.
 
-## Measures and interpretation
-
-- Concept coverage: share of annotated concepts with an accepted phrase in
-  each output; **not** semantic precision or recall.
-- Literal retention: share of protected numbers/units/acronyms present.
-- Paired delta: Skill coverage (%) minus baseline coverage (%).
-- Human review: semantic correctness, unsupported edits, and fluency.
-- Track out-of-index concepts separately. The Skill does not guarantee
-  canonical terminology for terms missing from the bundled GB/T indexes.
-
-The scorer uses normalized substring matching. It can match a phrase in the
-wrong context. Six cases are too few for statistical generalization. Add
-discipline-balanced sources, preregister success criteria and obtain independent
-gold review before extrapolating. No benchmark scores are shipped.
-
-## Attribution and reuse
-
-The original excerpts remain CC BY 4.0, attributed to the original authors
-through the full titles, DOIs, URLs and license links in each record. The
-benchmark does not relicense them under the repository's MIT LICENSE.
-Adaptations/translations must give attribution and identify modifications.
+For source-data reuse and GB/T terms, see ../DATA_RIGHTS.md.
