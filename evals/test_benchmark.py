@@ -14,7 +14,7 @@ SPEC.loader.exec_module(benchmark)
 def example_case(cid="paper-a"):
     return {
         "id": cid, "task": "translate_en_zh", "source_title": "paper", "source_url": "https://example.org/paper",
-        "doi": "10.1/example", "excerpt": "Machine learning 10 km", "prompt": "Translate",
+        "doi": "10.1/example", "authors": "Example Researcher", "modifications": "None", "excerpt": "Machine learning 10 km", "prompt": "Translate",
         "license": "CC BY 4.0", "license_url": "https://creativecommons.org/licenses/by/4.0/",
         "concepts": [{"id": "ml", "accepted": ["机器学习"], "in_index": True}],
         "protected_literals": ["10", "km"], "gold_reviewed": False,
